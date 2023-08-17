@@ -1,0 +1,17 @@
+include ../../mixins/serviceItem.pug
+
+.service-block.style-about-two.mt-100.pt-60.pb-60.bg-surface.style-three
+    .container 
+        .heading-block.row.flex-columns-center
+            .col-12.heading3.text-center Our Services
+            .col-10.text-center.body2.text-secondary.mt-12 Online banking allows you to manage your finances from anywhere, anytime.
+        .list-service.mt-40.pt-12
+            .row.row-gap-40
+                .col-12.col-xl-3.col-lg-6.col-md-6.col-sm-6
+                    +serviceItem({classname:'pl-32 pr-32 pt-40 pb-40 bora-8 bg-white', href:'service-education-resources.html', icon:'icon-hand-tick icon-gradient fs-60', title:'Internet Banking', desc:'With our Internet Banking service, you can access your accounts anytime, anywhere.'})
+                .col-12.col-xl-3.col-lg-6.col-md-6.col-sm-6
+                    +serviceItem({classname:'pl-32 pr-32 pt-40 pb-40 bora-8 bg-white', href:'service-education-resources.html', icon:'icon-coin-chair icon-gradient fs-60', title:'Mobile Banking', desc:'Our Mobile Banking app brings you fast and convenient mobile financial experience.'})
+                .col-12.col-xl-3.col-lg-6.col-md-6.col-sm-6
+                    +serviceItem({classname:'pl-32 pr-32 pt-40 pb-40 bora-8 bg-white', href:'service-education-resources.html', icon:'icon-coin-hand icon-gradient fs-60', title:'Money Transfers', desc:'Our money transfer service allows you to send money quickly to anywhere in the world.'})
+                .col-12.col-xl-3.col-lg-6.col-md-6.col-sm-6
+                    +serviceItem({classname:'pl-32 pr-32 pt-40 pb-40 bora-8 bg-white', href:'service-education-resources.html', icon:'icon-hand-protect icon-gradient fs-60', title:'Account Management', desc:'Managing your accounts has never been easier with Online Banking. Check your balances.'})

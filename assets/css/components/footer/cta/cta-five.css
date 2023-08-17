@@ -1,0 +1,57 @@
+.cta-block.style-five .container .content {
+  position: relative;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.cta-block.style-five .container .content .bg-cta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.cta-block.style-five .container .content .bg-cta img {
+  object-fit: cover;
+}
+.cta-block.style-five .container .content .text {
+  padding-right: 230px;
+}
+@media (max-width: 1169.99px) {
+  .cta-block.style-five .container .content .text {
+    padding-right: 260px;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 900.99px) {
+  .cta-block.style-five .container .content .text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 170px;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 767.99px) {
+  .cta-block.style-five .container .content .bg-cta img {
+    width: 200%;
+  }
+  .cta-block.style-five .container .content .text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 479.99px) {
+  .cta-block.style-five .container .content .text {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .cta-block.style-five .container .content .button-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

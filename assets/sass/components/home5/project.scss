@@ -1,0 +1,21 @@
+.project-five {
+    @media (max-width: 991.99px) {
+        .heading {
+            .heading3 {
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .list-project {
+            .project-above {
+                .row {
+                    >div:nth-child(1) {
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

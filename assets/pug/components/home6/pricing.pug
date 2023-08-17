@@ -1,0 +1,173 @@
+include ../../mixins/button.pug
+
+.pricing-main.pricing-six.pt-100.bg-on-surface 
+    .container 
+        .text-button-uppercase.text-orange Pricing 
+        .heading.flex-between.mt-12
+            .row.w-100.row-gap-24
+                .heading3.text-white.col-12.col-lg-8 Choose The 
+                    span.text-orange Plan & Pricing
+                .choose-type.flex-item-center.gap-20.text-white.col-12.col-lg-4
+                    .switch 
+                        .bg-placehover
+                    .body3.text-placehover Annual pricing (save 20%)
+        .list-pricing.show
+            .row.mt-40.flex-between.row-gap-32
+                .col-12.col-lg-4
+                    .pricing-item.p-32.bora-16.text-white
+                        .item-infor.pl-24.pr-24
+                            .heading7.text-center.text-orange Standard
+                            .heading3.text-center.mt-12 $40
+                                span.body1 /month
+                            .body3.text-center.text-line.mt-12 Billed annually.
+                            .list-feature.mt-32.flex-column.gap-12
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Advanced custom fields
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Audit log and data history
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual users
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-x-circle.fs-24.text-placehover
+                                    .body3.text-placehover Unlimited individual data
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-x-circle.fs-24.text-placehover
+                                    .body3.text-placehover Personalised+priotity service
+                        .button-block.w-100.mt-40
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block text-white text-button w-100 pt-12 pb-12 bora-8', text:'Get Started'})
+                        
+                .col-12.col-lg-4
+                    .pricing-item.p-32.bora-16.text-white
+                        .item-infor.pl-24.pr-24
+                            .heading7.text-center Primeum
+                            .heading3.text-center.mt-12 $60
+                                span.body1 /month
+                            .body3.text-center.text-line.mt-12 Billed annually.
+                            .list-feature.mt-32.flex-column.gap-12
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Advanced custom fields
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Audit log and data history
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual users
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual data
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-x-circle.fs-24.text-placehover
+                                    .body3.text-placehover Personalised+priotity service
+                        .button-block.w-100.mt-40
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block text-white text-button w-100 pt-12 pb-12 bora-8', text:'Get Started'})
+                        
+                .col-12.col-lg-4
+                    .pricing-item.p-32.bora-16.text-white
+                        .item-infor.pl-24.pr-24
+                            .heading7.text-center Enterprise plan
+                            .heading3.text-center.mt-12 $90
+                                span.body1 /month
+                            .body3.text-center.text-line.mt-12 Billed annually.
+                            .list-feature.mt-32.flex-column.gap-12
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Advanced custom fields
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Audit log and data history
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual users
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual data
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Personalised+priotity service
+                        .button-block.w-100.mt-40
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block text-white text-button w-100 pt-12 pb-12 bora-8', text:'Get Started'})
+        
+        .list-pricing-year.hide
+            .row.mt-40.flex-between.row-gap-32
+                .col-12.col-lg-4
+                    .pricing-item.p-32.bora-16.text-white
+                        .item-infor.pl-24.pr-24
+                            .heading7.text-center.text-orange Standard
+                            .heading3.text-center.mt-12 $320
+                                span.body1 /year
+                            .body3.text-center.text-line.mt-12 Billed annually.
+                            .list-feature.mt-32.flex-column.gap-12
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Advanced custom fields
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Audit log and data history
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual users
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-x-circle.fs-24.text-placehover
+                                    .body3.text-placehover Unlimited individual data
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-x-circle.fs-24.text-placehover
+                                    .body3.text-placehover Personalised+priotity service
+                        .button-block.w-100.mt-40
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block text-white text-button w-100 pt-12 pb-12 bora-8', text:'Get Started'})
+                        
+                .col-12.col-lg-4
+                    .pricing-item.p-32.bora-16.text-white
+                        .item-infor.pl-24.pr-24
+                            .heading7.text-center Primeum
+                            .heading3.text-center.mt-12 $480
+                                span.body1 /year
+                            .body3.text-center.text-line.mt-12 Billed annually.
+                            .list-feature.mt-32.flex-column.gap-12
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Advanced custom fields
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Audit log and data history
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual users
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual data
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-x-circle.fs-24.text-placehover
+                                    .body3.text-placehover Personalised+priotity service
+                        .button-block.w-100.mt-40
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block text-white text-button w-100 pt-12 pb-12 bora-8', text:'Get Started'})
+                        
+                .col-12.col-lg-4
+                    .pricing-item.p-32.bora-16.text-white
+                        .item-infor.pl-24.pr-24
+                            .heading7.text-center Enterprise plan
+                            .heading3.text-center.mt-12 $720
+                                span.body1 /year
+                            .body3.text-center.text-line.mt-12 Billed annually.
+                            .list-feature.mt-32.flex-column.gap-12
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Advanced custom fields
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Audit log and data history
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual users
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Unlimited individual data
+                                .item.flex-item-center.gap-16 
+                                    i.ph-fill.ph-check-circle.fs-24.text-orange
+                                    .body3 Personalised+priotity service
+                        .button-block.w-100.mt-40
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block text-white text-button w-100 pt-12 pb-12 bora-8', text:'Get Started'})
+        

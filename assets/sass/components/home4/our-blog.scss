@@ -1,0 +1,71 @@
+.blog-list.style-four {
+    .blog-item-main {
+        .bg-img {
+            border-radius: 8px;
+
+            img {
+                transition: all ease 0.4s;
+            }
+        }
+
+        .infor {
+            .heading4 {
+                transition: all ease 0.4s;
+            }
+        }
+
+        &:hover {
+            .bg-img {
+                img {
+                    transform: scale(1.06);
+                }
+            }
+
+            .infor {
+                .heading4 {
+                    color: var(--success);
+                }
+            }
+        }
+    }
+
+    .list-blog-related {
+        a {
+            .bg-img {
+                img {
+                    transition: all ease 0.4s;
+                }
+            }
+    
+            .infor {
+                .heading6 {
+                    transition: all ease 0.4s;
+                }
+            }
+    
+            &:hover {
+                .bg-img {
+                    img {
+                        transform: scale(1.06);
+                    }
+                }
+    
+                .infor {
+                    .heading6 {
+                        color: var(--success);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991.99px) {
+        .container {
+            >.row {
+                .pr-55 {
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.cta-block.style-four {
+  position: relative;
+  width: 100%;
+}
+.cta-block.style-four .bg-cta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.cta-block.style-four .bg-cta img {
+  object-fit: cover;
+}
+.cta-block.style-four .container > div, .cta-block.style-four .container a {
+  z-index: 1;
+}

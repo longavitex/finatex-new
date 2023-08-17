@@ -1,0 +1,13 @@
+include ../mixins/button.pug
+
+.bottom-slider-three.mt-100
+    .container 
+        .row.row-gap-32.column-reverse-xl
+            .col-12.col-xl-6.flex-columns-between.row-gap-20.pr-40
+                .heading3 Effective Risk Management Solutions for Financial Stability
+                .body2.text-secondary We offer reliable Risk Management services to safeguard your assets, ensure financial stability, and navigate rapidly changing business environments. We understand that managing risks is crucial for the sustainability and success of your enterprise
+                .button-block
+                    +button({type:'link', href:'service-detail.html', classname:'hover-button-black text-white bg-blue text-button display-inline-block pt-12 pb-12 pl-36 pr-36 bora-48', text:'Discovery'})    
+            .col-12.col-xl-6
+                .bg-img.w-100.overflow-hidden.bora-20
+                    img(src="assets/images/component/bottom-slider-three.png", alt="").w-100.h-100.hover-scale.display-block

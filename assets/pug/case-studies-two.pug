@@ -1,0 +1,19 @@
+extends base/layout.pug
+block title
+  title Case Studies - Style 2
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-case-two")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/case-studies.png', nav:'Home', nav1:'Case Studies', heading:'Case Studies', subHeading:"Discover our collection of compelling Case Studies showcasing our successful projects and the positive impact we've made for our clients."})
+    include components/case-studies/case-style-two.pug
+    include components/scroll-to-top.pug
+    .pb-100
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

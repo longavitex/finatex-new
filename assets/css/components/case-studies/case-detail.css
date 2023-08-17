@@ -1,0 +1,54 @@
+@media (max-width: 575.99px) {
+  .project-infor .container .row > div:first-child .count-number .item .body3 {
+    font-size: 12px;
+  }
+}
+
+.how-we-did .container .row > div:first-child .bg-img {
+  position: relative;
+}
+.how-we-did .container .row > div:first-child .bg-img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: var(--critical);
+  transition: all ease 0.4s;
+  padding: 26px;
+}
+.how-we-did .container .row > div:first-child .bg-img i:hover {
+  background-color: rgb(252, 63, 63);
+  color: var(--white);
+}
+@media (max-width: 480.99px) {
+  .how-we-did .container .row > div:first-child .bg-img i {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+@media (max-width: 991.99px) {
+  .how-we-did .desc {
+    margin-left: 0;
+  }
+  .how-we-did .desc .mt-40 {
+    margin-top: 16px;
+  }
+}
+
+.layout-item .col-12:first-child .button-block a {
+  position: relative;
+}
+.layout-item .col-12:first-child .button-block a span {
+  padding-left: 28px;
+}
+.layout-item .col-12:first-child .button-block a i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 991.99px) {
+  .layout-item .col-12 .bg-img {
+    padding-left: 0;
+  }
+}

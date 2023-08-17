@@ -1,0 +1,312 @@
+extends base/layout.pug
+block title
+  title Blog List - Style 1
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-blog-list-one")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/blog.png', nav:'Home', nav1:'Blog', heading:'Blog', subHeading:"Discover valuable insights and expert advice on budgeting, investing, and retirement planning in our Financial Blogs section."})
+    .blog-list.mt-100
+        .container 
+            .row.row-gap-40
+                .col-12.col-lg-8.flex-column.row-gap-40
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter" data-name="tab-one")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item1.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 How does writing influence your personal brand?
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter" data-name="tab-one")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item2.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 How to write content about your photographs?
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter" data-name="tab-one")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item3.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 Where to grow your business as a photographer: site or social media?
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter" data-name="tab-one")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item4.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 Caring is the new marketing
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter" data-name="tab-one")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item5.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 Travelling as a way of self-discovery and progress
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-two")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item6.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 Caring is the new marketing
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-two")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item7.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 Travelling as a way of self-discovery and progress
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-two")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item8.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 How does writing influence your personal brand?
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-two")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item9.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 How to write content about your photographs
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-two")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item10.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 How does writing influence your personal brand?
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-three")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item11.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 Travelling as a way of self-discovery and progress
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-three")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item12.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 Caring is the new marketing
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-three")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item13.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 How does writing influence your personal brand?
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-three")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item7.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 Caring is the new marketing
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+                    a(href="blog-detail-one.html" class="row blog-item row-gap-20 item-filter hide" data-name="tab-three")
+                        .col-12.col-md-6
+                            .bg-img.w-100.overflow-hidden.bora-16
+                                img(src="assets/images/blog/item2.png", alt="").w-100.h-100.display-block
+                        .col-12.col-md-6
+                            .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block Development
+                            .heading6.mt-8 How to write content about your photographs
+                            .date.flex-item-center.gap-16.mt-8
+                                .author.caption2.text-secondary by 
+                                    span.text-on-surface Avitex 
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank
+                                    span.ml-4.caption2 2 days ago
+                            .body3.text-secondary.mt-16.pb-16 The jobs report soundly beat expectations, with job gains broadly spread across the economy and about 60% higher…
+                            .read.fw-700.text-underline Read More
+
+                    .list-nav.flex-item-center.gap-8
+                        .nav-item.bora-4.bg-surface.text-button.w-40.h-40.flex-center.border-line-1px&attributes({"data-name":"tab-one"}).active 1
+                        .nav-item.bora-4.bg-surface.text-button.w-40.h-40.flex-center.border-line-1px&attributes({"data-name":"tab-two"}) 2
+                        .nav-item.bora-4.bg-surface.text-button.w-40.h-40.flex-center.border-line-1px&attributes({"data-name":"tab-three"}) 3
+                .col-12.col-lg-4.pl-55
+                    .search-block.bora-8.bg-surface
+                        input(type="text" placeholder="Search").bora-8.bg-surface.w-100
+                        i.ph.ph-magnifying-glass
+                    .cate-block.mt-40
+                        .heading7 Categories
+                        .list-nav.mt-16
+                            .nav-item.bora-8.flex-between.p-12.pointer.text-button.text-secondary.active&attributes({"data-name":"tab-one"}) Financial Planning
+                                i.ph-bold.ph-caret-right.hidden
+                            .nav-item.bora-8.flex-between.p-12.pointer.text-button.text-secondary&attributes({"data-name":"tab-two"}) Payment Solution
+                                i.ph-bold.ph-caret-right.hidden
+                            .nav-item.bora-8.flex-between.p-12.pointer.text-button.text-secondary&attributes({"data-name":"tab-three"}) Cryptocurrency Financial
+                                i.ph-bold.ph-caret-right.hidden
+                            .nav-item.bora-8.flex-between.p-12.pointer.text-button.text-secondary&attributes({"data-name":"tab-one"}) Blockchain
+                                i.ph-bold.ph-caret-right.hidden
+                            .nav-item.bora-8.flex-between.p-12.pointer.text-button.text-secondary&attributes({"data-name":"tab-two"}) Online Banking
+                                i.ph-bold.ph-caret-right.hidden
+                            .nav-item.bora-8.flex-between.p-12.pointer.text-button.text-secondary&attributes({"data-name":"tab-three"}) Personal Financial
+                                i.ph-bold.ph-caret-right.hidden
+                    .recent-post-block.mt-40
+                        .recent-post-heading.heading7 Recent Posts
+                        .list-recent-post.mt-16
+                            .recent-post-item.d-flex.item-start.gap-16
+                                a(href="blog-detail-one.html").item-img
+                                    img(src="assets/images/blog/recent1.png", alt="")
+                                .item-infor
+                                    a(href="blog-detail-one.html")
+                                        .item-date.flex-item-center
+                                            i.ph-bold.ph-calendar-blank
+                                            span.ml-4.caption2 2 days ago
+                                        .item-title.mt-4 September Most-Loved Best Selling Fall Pieces
+                            .recent-post-item.d-flex.item-start.gap-16.mt-24
+                                a(href="blog-detail-one.html").item-img
+                                    img(src="assets/images/blog/recent3.png", alt="")
+                                .item-infor
+                                    a(href="blog-detail-one.html")
+                                        .item-date.flex-item-center
+                                            i.ph-bold.ph-calendar-blank
+                                            span.ml-4.caption2 2 days ago
+                                        .item-title.mt-4 5 Rules to keep in mind when negotiating a job
+                            .recent-post-item.d-flex.item-start.gap-16.mt-24
+                                a(href="blog-detail-one.html").item-img
+                                    img(src="assets/images/blog/recent4.png", alt="")
+                                .item-infor
+                                    a(href="blog-detail-one.html")
+                                        .item-date.flex-item-center
+                                            i.ph-bold.ph-calendar-blank
+                                            span.ml-4.caption2 2 days ago
+                                        .item-title.mt-4 Strategies to increase salary with job offers
+                    .tags-popular-block.mt-40
+                        .tag-heading.heading7 Popular Tags
+                        .list-tag.mt-16.d-flex.flex-wrap.gap-12
+                            a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Featured
+                            a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Experience
+                            a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Interview
+                            a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Skill
+                            a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Business
+                            a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Design
+    include components/scroll-to-top.pug
+    .pb-100     
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

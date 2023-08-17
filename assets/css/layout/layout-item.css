@@ -1,0 +1,41 @@
+.layout-item .row .bg-video {
+  width: 100%;
+  position: relative;
+}
+.layout-item .row .bg-video i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: var(--critical);
+  transition: all ease 0.4s;
+  padding: 26px;
+}
+.layout-item .row .bg-video i:hover {
+  background-color: rgb(252, 63, 63);
+  color: var(--white);
+}
+@media (max-width: 991.99px) {
+  .layout-item .row > div:first-child {
+    padding-right: 15px;
+  }
+  .layout-item .row > div:last-child {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 991.99px) {
+  .style-three .layout-item .container .row {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 575.99px) {
+  .style-three .layout-item .container .row {
+    flex-direction: column-reverse;
+  }
+  .style-three .layout-item .container .row > div:nth-child(2) .bg-video i {
+    font-size: 24px;
+    padding: 18px;
+  }
+}

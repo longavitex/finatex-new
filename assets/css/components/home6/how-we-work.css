@@ -1,0 +1,46 @@
+.how-we-work .container > .row {
+  margin-top: 80px;
+  row-gap: 70px;
+}
+.how-we-work .container > .row .main-item {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: radial-gradient(41.35% 54.74% at 33.03% -4.74%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(6px);
+  transition: all ease 0.5s;
+}
+.how-we-work .container > .row .main-item .number {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -40px;
+}
+.how-we-work .container > .row .main-item .heading7 {
+  padding-top: 22px;
+}
+.how-we-work .container > .row .main-item:hover {
+  margin-top: -10px;
+}
+@media (max-width: 1023.99px) {
+  .how-we-work .container > .row .main-item:hover {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767.99px) {
+  .how-we-work .container > .row {
+    margin-top: 40px;
+    row-gap: 40px;
+  }
+  .how-we-work .container > .row .main-item .number {
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    top: -24px;
+  }
+  .how-we-work .container > .row .main-item .heading7 {
+    padding-top: 12px;
+  }
+}

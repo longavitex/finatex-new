@@ -1,0 +1,84 @@
+.form-contact .row .list-social .item:nth-child(4) i, .form-contact .row .list-social .item:last-child i {
+  margin-left: 2px;
+}
+@media (max-width: 567.99px) {
+  .form-contact .row .list-social .item {
+    width: 40px;
+    height: 40px;
+  }
+}
+.form-contact .row .list-more-infor .item .line-y {
+  height: 28px;
+}
+.form-contact .row .list-more-infor .item:nth-child(3) .text-button {
+  text-transform: none;
+}
+.form-contact .row .form-block input,
+.form-contact .row .form-block select,
+.form-contact .row .form-block textarea {
+  border: 1px solid transparent;
+  outline: none;
+}
+.form-contact .row .form-block input:focus,
+.form-contact .row .form-block select:focus,
+.form-contact .row .form-block textarea:focus {
+  border: 1px solid var(--blue);
+}
+.form-contact .row .form-block select {
+  -webkit-appearance: none;
+}
+.form-contact .row .form-block .col-12 {
+  position: relative;
+}
+.form-contact .row .form-block .col-12 input,
+.form-contact .row .form-block .col-12 select {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.form-contact .row .form-block .col-12 i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+}
+.form-contact .row .form-block.style-one button {
+  border: 2px solid transparent;
+  outline: none;
+  transition: 0.3s;
+}
+.form-contact .row .form-block.style-one button:hover {
+  background-color: #fff;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+.form-contact.style-two .container > .row > div:last-child {
+  border-radius: 16px;
+  padding: 40px 44px;
+  box-shadow: 0px 1px 25px 0px rgba(54, 95, 104, 0.1);
+}
+.form-contact.style-two .heading .title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.form-contact.style-two button {
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+.form-contact.style-two button:hover {
+  background-color: var(--blue);
+}
+.form-contact.style-two .map-block iframe {
+  width: 100%;
+  height: 512px;
+  margin-bottom: -6px;
+}
+@media (max-width: 1169.99px) {
+  .form-contact .row .col-12.col-xl-6 {
+    padding-left: 15px;
+  }
+}

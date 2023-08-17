@@ -1,0 +1,20 @@
+mixin sliderSub(props = {})
+    -var {classname = '', link2=false, href2="#!", img, nav, nav1, nav2, heading, subHeading} = props
+    div(class=`slider-sub ${classname}`)
+        .bg-img 
+            img(src=`${img}`, alt="banner")
+        .container 
+            .heading-nav.gap-4.mt-32
+                a(href="index.html").hover-underline.caption1.text-white!= nav 
+                i.ph.ph-caret-double-right.text-white
+                if(link2==true)
+                    a(href=`${href2}`).hover-underline.caption1.text-white!= nav1 
+                if(link2==false)
+                    .caption1.text-white!= nav1 
+                if(nav2)
+                    i.ph.ph-caret-double-right.text-white
+                    .caption1.text-white!= nav2
+            .text-nav 
+                .heading3.text-white!= heading
+                .sub-heading.mt-8.text-white.fw-400!= subHeading
+

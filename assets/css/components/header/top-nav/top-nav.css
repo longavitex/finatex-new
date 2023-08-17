@@ -1,0 +1,69 @@
+.top-nav.style-one .list-social .item i {
+  margin-left: 2px;
+}
+.top-nav.style-one .list-social .item:nth-child(3) i, .top-nav.style-one .list-social .item:nth-child(4) i, .top-nav.style-one .list-social .item:nth-child(5) i {
+  margin-top: 1px;
+}
+.top-nav.style-one .list-social .item:hover {
+  background-color: var(--white);
+}
+.top-nav.style-one .list-social .item:hover i::before {
+  color: var(--blue);
+}
+
+.list-social.style-two .item:hover {
+  background-color: var(--on-surface);
+}
+.list-social.style-two .item:hover i::before {
+  color: var(--white);
+}
+
+.style-home-three .header-menu .menu-right-block .list-social .item:hover {
+  background-color: #fff;
+}
+.style-home-three .header-menu .menu-right-block .list-social .item:hover i::before {
+  color: var(--gradient);
+}
+.style-home-three .header-menu .menu-right-block .list-social .item:nth-child(3) i {
+  margin-left: 3px;
+  margin-top: 1px;
+}
+.style-home-three .header-menu .menu-right-block .list-social .item:nth-child(4) i {
+  margin-left: 2px;
+}
+.style-home-three .header-menu .menu-right-block .list-social .item:nth-child(5) i {
+  margin-left: 2px;
+}
+
+.top-nav.style-four .right-block .list-social .item:hover i::before {
+  color: var(--success);
+}
+.top-nav.style-four .right-block .list-social .item:nth-child(4) i {
+  margin-left: 1px;
+}
+
+.style-home-five .top-nav.style-one {
+  background-color: var(--on-surface);
+}
+.style-home-five .top-nav.style-one select {
+  background-color: var(--on-surface);
+}
+
+.style-home-six .top-nav.style-one {
+  background-color: var(--on-surface);
+}
+.style-home-six .top-nav.style-one .list-social .item i {
+  margin-left: 2px;
+}
+.style-home-six .top-nav.style-one .list-social .item:nth-child(3) i, .style-home-six .top-nav.style-one .list-social .item:nth-child(4) i, .style-home-six .top-nav.style-one .list-social .item:nth-child(5) i {
+  margin-top: 1px;
+}
+.style-home-six .top-nav.style-one .list-social .item:hover {
+  background-color: var(--white);
+}
+.style-home-six .top-nav.style-one .list-social .item:hover i::before {
+  color: var(--orange);
+}
+.style-home-six .top-nav.style-one select {
+  background-color: var(--on-surface);
+}

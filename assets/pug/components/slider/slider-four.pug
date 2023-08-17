@@ -1,0 +1,39 @@
+include ../../mixins/button.pug
+
+.slider-block.style-four 
+    .prev-arrow.flex-center
+        i.ph-bold.ph-caret-left.text-white
+    .slider-main.bg-white
+        .slider-item
+            .bg-img 
+                img(src="assets/images/slider/slider4-1.png", alt="").w-100.h-100
+            .container 
+                .text-content
+                    .heading2.animate__animated.animate__fadeInUp.animate__delay-0-2s Empower Your Finances <br>with Personalized <br>Solution
+                    .body2.mt-12.animate__animated.animate__fadeInUp.animate__delay-0-5s Our platform offers secure and reliable investment <br>opportunities in the rapidly growing world of cryptocurrency.
+                    .button-block.flex-item-center.mt-40.gap-30.animate__animated.animate__fadeInUp.animate__delay-0-8s
+                        +button({type:'link', href:'service-one.html', classname:'display-inline-block hover-button-black bg-success text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+                        +button({type:'link', href:'#video', classname:'display-inline-flex bg-transparent text-button bora-8', text:'Watch Demos', icon: 'ph-fill ph-play text-critical fs-14'})
+        .slider-item
+            .bg-img 
+                img(src="assets/images/slider/slider4-2.png", alt="").w-100.h-100
+            .container 
+                .text-content
+                    .heading2 Tailored Financial <br>Strategies for <br>Success
+                    .body2.mt-12 Our tailored financial strategies are designed <br>to empower you on your journey to success
+                    .button-block.flex-item-center.mt-40.gap-30
+                        +button({type:'link', href:'service-one.html', classname:'display-inline-block hover-button-black bg-success text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+                        +button({type:'link', href:'#video', classname:'display-inline-flex bg-transparent text-button bora-8', text:'Watch Demos', icon: 'ph-fill ph-play text-critical fs-14'})
+        .slider-item
+            .bg-img 
+                img(src="assets/images/slider/slider4-3.png", alt="").w-100.h-100
+            .container 
+                .text-content
+                    .heading2 Customized Financial <br>Planning for <br>Your Goals
+                    .body2.mt-12 Experience the power of customized financial planning, <br>bringing you closer to achieving your goals
+                    .button-block.flex-item-center.mt-40.gap-30
+                        +button({type:'link', href:'service-one.html', classname:'display-inline-block hover-button-black bg-success text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+                        +button({type:'link', href:'#video', classname:'display-inline-flex bg-transparent text-button bora-8', text:'Watch Demos', icon: 'ph-fill ph-play text-critical fs-14'})
+    .next-arrow.flex-center
+        i.ph-bold.ph-caret-right.text-white
+        

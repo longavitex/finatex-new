@@ -1,0 +1,22 @@
+extends base/layout.pug
+block title
+  title About - Style 2
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-about-two")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/about1.png', nav:'Home', nav1:'About Us', heading:'About Us', subHeading:'We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy.'})
+    include components/home2/financial-assessment.pug
+    include components/service/service-about-two.pug
+    include components/form-cta/form-cta-about.pug
+    include components/our-team.pug
+    include components/scroll-to-top.pug
+    .pb-100.bg-white
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

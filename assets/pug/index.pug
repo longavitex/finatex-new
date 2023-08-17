@@ -1,0 +1,22 @@
+extends base/layout.pug
+block title
+  title Homepage 1 - Payment Solution
+block header 
+  include components/header/top-nav/top-nav-one.pug
+  include components/header/menu/menu-one.pug
+block content
+  include components/slider/slider-one.pug
+  include components/service/service-one.pug
+  include components/home1/payment-gateway-one.pug
+  include components/benefit/benefit-one.pug
+  include components/home1/payment-gateway-two.pug
+  include components/home1/faqs.pug
+  include components/home1/form-request.pug
+  include components/home1/our-blog.pug
+  include components/partner/partner-5col-one.pug
+  include components/scroll-to-top.pug
+block footer 
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

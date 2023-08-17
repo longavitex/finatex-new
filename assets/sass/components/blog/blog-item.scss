@@ -1,0 +1,45 @@
+// Blog Item: Start
+.blog-item {
+    .blog-item-main {
+        cursor: pointer;
+        border-radius: 16px;
+        display: block;
+        height: 100%;
+        background-color: #fff;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        box-shadow: 0px 10px 25px 0px rgba(54, 95, 104, 0.15);
+
+        .bg-img {
+            img {
+                transition: all ease 0.5s;
+                object-fit: cover;
+            }
+        }
+
+        .heading6 {
+            transition: all ease 0.5s;
+        }
+
+        &:hover {
+            .bg-img {
+                img {
+                    transform: scale(1.05);
+                    transition: all ease 0.5s;
+                }
+            }
+
+            .heading6 {
+                color: var(--blue);
+                transition: all ease 0.5s;
+            }
+        }
+    }
+}
+
+.col-lg-show {
+    @media (max-width: 1169.99px) and (min-width: 576px) {
+        display: block;
+    }
+}
+// Blog Item: End

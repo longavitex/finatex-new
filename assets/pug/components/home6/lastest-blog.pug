@@ -1,0 +1,13 @@
+include ../../mixins/blogItem.pug
+
+.blog-list.style-six.pt-100.pb-100.bg-on-surface
+        .container 
+            .heading.flex-between 
+                .heading3.text-white Latest News
+                a(href="blog-grid.html").text-white.text-underline.hover-text-orange View All
+            .row.row-gap-32.mt-40
+                +blogItem({classname: 'col-12 col-xl-4 col-sm-6', href: 'blog-detail-two.html', img:'assets/images/blog/item8.png', cate:'Makerting', title:'CI Financial sells RIA stake in new expansion strategy', author:'Avitex', time:'1 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-sm-6', href: 'blog-detail-two.html', img:'assets/images/blog/item9.png', cate:'Design', title:'Helping a local business reinvent itself', author:'Avitex', time:'2 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-sm-6', href: 'blog-detail-two.html', img:'assets/images/blog/item10.png', cate:'Development', title:'Retirement Planning Strategies', author:'Avitex', time:'2 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-sm-6 display-none col-lg-show', href: 'blog-detail-two.html', img:'assets/images/blog/item7.png', cate:'Development', title:'Barred financial advisors charged in $72 million criminal', author:'Avitex', time:'2 days ago'})
+                

@@ -1,0 +1,39 @@
+include ../../mixins/button.pug
+
+.slider-block.style-one 
+    .prev-arrow.flex-center
+        i.ph-bold.ph-caret-left.text-white
+    .slider-main
+        .slider-item.slider-first
+            .bg-img 
+                img(src="assets/images/slider/slider1.png", alt="").w-100.h-100.animate__animated.animate__fadeIn.animate__delay-0-2s
+            .container 
+                .text-content.flex-columns-between
+                    .heading2.animate__animated.animate__fadeInUp.animate__delay-0-2s Simplify and Secure <br>Your Payments with <br>
+                        span.text-blue.w-350 Our Solution
+                    .body2.mt-12.text-secondary.animate__animated.animate__fadeInUp.animate__delay-0-5s Our platform offers secure and reliable investment <br>opportunities in the rapidly growing world of cryptocurrency.
+                    .button-block.mt-40.animate__animated.animate__fadeInUp.animate__delay-0-8s
+                        +button({type:'link', href:'service-one.html', classname:'display-inline-block hover-button-black border-none bg-blue text-white text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+        .slider-item.slider-second
+            .bg-img 
+                img(src="assets/images/slider/slider1-2.png", alt="").w-100.h-100
+            .container 
+                .text-content.flex-columns-between
+                    .heading2 Empower Your <br>Business with <br>
+                        span.text-blue.w-100 Seamless Payments
+                    .body2.mt-12.text-secondary Our platform offers secure and reliable investment <br>opportunities in the rapidly growing world of cryptocurrency.
+                    .button-block.mt-40
+                        +button({type:'link', href:'service-one.html', classname:'display-inline-block hover-button-black border-none bg-blue text-white text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+        .slider-item.slider-third
+            .bg-img 
+                img(src="assets/images/slider/slider1-1.png", alt="").w-100.h-100
+            .container 
+                .text-content.flex-columns-between
+                    .heading2 Powerful Payment <br>Solutions for <br>
+                        span.text-blue.w-100 Seamless Transactions
+                    .body2.mt-12.text-secondary Trust us to help you navigate the complex landscape and <br>achieve your financial goals with peace of mind.
+                    .button-block.mt-40
+                        +button({type:'link', href:'service-one.html', classname:'display-inline-block hover-button-black border-none bg-blue text-white text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+    .next-arrow.flex-center
+        i.ph-bold.ph-caret-right.text-white
+    

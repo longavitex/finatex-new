@@ -1,0 +1,22 @@
+include ../../mixins/button.pug
+
+.form-request.mt-100
+    .container 
+        .heading.flex-between 
+            .heading3 Request a free call back.
+            .body3.text-secondary Working with this agency has been a game-changer for our business Forem ipsum <br>dolor sit amet, consectetur adipiscing elit. 
+        .form.mt-40.flex-between.gap-30
+            .row.w-100
+                .col-12.col-lg-4.col-md-6
+                    input(type="text" placeholder="First name*").body3.pt-12.pb-12.pl-20.pr-20.bg-surface.bora-8.w-100
+                .col-12.col-lg-4.col-md-6
+                    input(type="text" placeholder="Email").body3.pt-12.pb-12.pl-20.pr-20.bg-surface.bora-8.w-100
+                .col-12.col-lg-4.select-arrow-none
+                    select(name="categories").body3.pt-12.pb-12.pl-20.pr-20.bg-surface.bora-8.w-100
+                        option(value="Financial Planning") Financial Planning
+                        option(value="Business Planning") Business Planning
+                        option(value="Development Planning") Development Planning
+                    i.ph.ph-caret-down
+            .button-block 
+                +button({type:'button', classname:'bg-on-surface hover-bg-blue text-white text-button pl-28 pr-28 pt-12 pb-12 bora-48', text:'Submit'})
+                

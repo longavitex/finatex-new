@@ -1,0 +1,8 @@
+mixin questionItem(props = {})
+    -var {classname = '', title, content} = props
+    div(class=`${classname} question-item hover-box-shadow pointer mt-20 pl-28 pr-28 bora-8 border-line-1px`)
+        .question-item-main.flex-between.pt-16.pb-16.heading7!= title
+            i.ph-bold.ph-plus.fs-20.p-8
+        .content-question
+            .border-line
+            .body3.text-secondary.pt-16.pb-16!= content

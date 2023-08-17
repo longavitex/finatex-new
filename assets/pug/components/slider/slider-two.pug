@@ -1,0 +1,18 @@
+include ../../mixins/button.pug
+
+.slider-block.style-two 
+    .slider-main
+        .slider-item
+            .container 
+                .text-content.flex-columns-between.row-gap-40
+                    .title
+                        .heading2.animate__animated.animate__fadeInUp.animate__delay-0-2s Reach financial goals <br>with our expert <br>guidance & solutions
+                        .body2.text-secondary.mt-16.animate__animated.animate__fadeInUp.animate__delay-0-5s Get personalized financial advice to help reach your financial goals.
+                    .button-block.animate__animated.animate__fadeInUp.animate__delay-0-8s
+                        input(type="text" placeholder="Email").body3.text-secondary
+                        +button({type:'link', href:'contact-two.html', classname:'display-inline-flex hover-bg-blue bg-on-surface text-white text-button pl-28 pr-28 pt-12 pb-12 bora-48', text:'Get started', icon: 'ph ph-arrow-right text-white'})
+                .slider-img.animate__animated.animate__fadeInRight.animate__delay-0-2s
+                    .bg-main 
+                        img(src="assets/images/slider/slider2.png", alt="").h-100.w-100
+                    img(src="assets/images/slider/subslider2-1.png", alt="").box-shadow
+                    img(src="assets/images/slider/subslider2-2.png", alt="").box-shadow

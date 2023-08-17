@@ -1,0 +1,21 @@
+.style-two .count-number-block .container {
+  border-top: 1px solid var(--line);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 575.99px) {
+  .style-two .count-number-block {
+    margin-top: 32px;
+  }
+  .style-two .count-number-block .container {
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .count-number-block .count-block .counter, .count-number-block .count-block .heading3 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}

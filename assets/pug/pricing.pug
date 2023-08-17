@@ -1,0 +1,20 @@
+extends base/layout.pug
+block title
+  title Pricing
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-pricing")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/contact.png', nav:'Home', nav1:'Pricing', heading:'Pricing', subHeading:"Discover transparent pricing options tailored to your budget on our Pricing page."})
+    div(class="pricing-block style-pricing")
+      include components/list-pricing.pug
+    include components/scroll-to-top.pug
+    .pb-100     
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

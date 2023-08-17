@@ -1,0 +1,20 @@
+extends base/layout.pug
+block title
+  title Service Style 1
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-service-sidetab")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/about1.png', nav:'Home', nav1:'Services', heading:'Our Services', subHeading:'We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy.'})
+    include components/bottom-slider-three.pug
+    include components/service/service-five.pug
+    include components/partner/partner-black.pug
+    include components/scroll-to-top.pug
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

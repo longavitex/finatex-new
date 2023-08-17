@@ -1,0 +1,18 @@
+extends base/layout.pug
+block title
+  title Service Detail - Risk Management
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-service-detail")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/about1.png', nav:'Home', link2:true, href2:'service-one.html', nav1:'Services', nav2:'Financial Planning', heading:'Risk Management', subHeading:'We employ industry-leading tools and techniques to protect your investments and minimize potential losses.'})
+    include components/service/content-detail.pug
+    include components/scroll-to-top.pug
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

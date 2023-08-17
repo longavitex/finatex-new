@@ -1,0 +1,63 @@
+.testimonials-block.style-two .list-comment .comment-item .content {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  text-transform: capitalize;
+}
+@media (max-width: 767.99px) {
+  .testimonials-block.style-two .list-comment {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .testimonials-block.style-two .list-comment .comment-item .heading3,
+  .testimonials-block.style-two .list-comment .comment-item .content {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+  .testimonials-block.style-two .list-comment .comment-item .content {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.testimonials-block.style-two .slick-initialized .slick-slide {
+  display: flex;
+}
+.testimonials-block.style-two .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 16px;
+}
+.testimonials-block.style-two .slick-dots li {
+  position: relative;
+  border: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.testimonials-block.style-two .slick-dots li button {
+  display: none;
+}
+.testimonials-block.style-two .slick-dots li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  transition: 0.5s;
+}
+.testimonials-block.style-two .slick-dots li.slick-active {
+  border: 1px solid var(--on-surface);
+  background-color: #fff;
+}
+.testimonials-block.style-two .slick-dots li.slick-active::after {
+  background-color: var(--on-surface);
+  border: 1px solid var(--on-surface);
+}

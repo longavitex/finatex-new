@@ -1,0 +1,29 @@
+.cta-three .container,
+.cta-three .row {
+  position: relative;
+  height: 100%;
+}
+.cta-three .button-block {
+  padding-bottom: 216px;
+  z-index: 5;
+}
+.cta-three .bg-img {
+  position: absolute;
+  bottom: 0;
+}
+.cta-three .bg-img img {
+  display: block;
+}
+@media (max-width: 575.99px) {
+  .cta-three .pt-80 {
+    padding-top: 40px;
+  }
+  .cta-three .button-block {
+    padding-bottom: 140px;
+  }
+}
+@media (max-width: 399.99px) {
+  .cta-three .button-block {
+    padding-bottom: 120px;
+  }
+}

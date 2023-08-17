@@ -1,0 +1,67 @@
+mixin serviceItem(props = {})
+    -var {classname = '', href="service-detail.html", icon, title, desc, explore=false, read=false, number, arrow=false, styleTwo=false} = props
+    div(class=`service-item hover-box-shadow ${classname}`)
+        if(!number)
+            if(arrow==false)
+                if(styleTwo==false)
+                    a(href=`${href}`).service-item-main.flex-column.gap-16
+                        .heading.flex-item-center.gap-16
+                            i(class=`${icon}`)
+                            .heading6.hover-text-blue!= title 
+                        .body3.text-secondary!= desc 
+                        if(explore==true)
+                            .explore-block.flex-item-center.gap-4
+                                .text-button-small.text-blue Explore Plan
+                                i.ph-bold.ph-caret-double-right.fs-12.text-blue
+                        if(read==true)
+                            .read-block.fs-14.fw-700.text-blue Read More
+                if(styleTwo==true)
+                    a(href=`${href}`).service-item-main.flex-item-center.gap-30
+                        .heading
+                            i(class=`${icon}`)
+                        .desc
+                            .heading7.hover-text-blue!= title 
+                            .body3.text-secondary.mt-8!= desc 
+                            if(explore==true)
+                                .explore-block.flex-item-center.gap-4.mt-8
+                                    .text-button-small.text-blue Explore Plan
+                                    i.ph-bold.ph-caret-double-right.fs-12.text-blue
+                            if(read==true)
+                                .read-block.flex-item-center.gap-4.mt-8
+                                    span.fs-14.fw-700.text-blue Read More
+                                    i.ph-bold.ph-caret-double-right.fs-12.text-blue
+            if(arrow==true)
+                .service-item-main.flex-column.gap-16
+                    .heading.flex-between
+                        i(class=`${icon}`)
+                        a(href=`${href}`)
+                            i.ph-bold.ph-arrow-up-right.fs-32.hover-text-blue
+                    .desc
+                        a(href=`${href}`).heading7.hover-text-blue!= title 
+                        .body3.text-secondary.mt-4!= desc 
+                    if(explore==true)
+                        a(href=`${href}`).explore-block.flex-item-center.gap-4
+                            .text-button-small.text-blue Explore Plan
+                            i.ph-bold.ph-caret-double-right.fs-12.text-blue
+                    if(read==true)
+                        a(href=`${href}`).read-block.flex-item-center.gap-4
+                            span.fs-14.fw-700.text-blue Read More
+                            i.ph-bold.ph-caret-double-right.fs-12.text-blue
+        if(number)
+            a(href=`${href}`).service-item-main.flex-column.gap-16
+                .heading.flex-between
+                    i(class=`${icon}`)
+                    .number.heading3.text-placehover!= number
+                .desc
+                    .heading7.hover-text-blue!= title 
+                    .body3.text-secondary.mt-4!= desc 
+                if(explore==true)
+                    .explore-block.flex-item-center.gap-4.hover-text-blue
+                        .text-button-small.text-blue Explore Plan
+                        i.ph-bold.ph-caret-double-right.fs-12.text-blue
+                if(read==true)
+                    .read-block.flex-item-center.gap-4.hover-text-blue
+                        span.fs-14.fw-700.text-blue Read More
+                        i.ph-bold.ph-caret-double-right.fs-12.text-blue
+        
+        

@@ -1,0 +1,180 @@
+include ../mixins/button.pug
+
+.pricing-main.mt-100
+    .container
+        .heading.flex-columns-center.row-gap-32 
+            .title.text-center
+                .heading3 Pricing
+                .body1.mt-8 Choose a plan that’s right for you
+            .choose-type.flex-item-center.gap-20
+                .body3 Pay Monthly
+                .switch 
+                    .bg-placehover
+                .body3.text-placehover Pay Yearly
+        .list-pricing.show.mt-60
+            .row.row-gap-32
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow
+                        .heading6 Freebie
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $0
+                            .body3 / Month
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'#!', classname:'text-center display-block hover-bg-blue bg-white border-blue-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Unlimited Projects
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow.bg-blue.text-white
+                        .heading6 Professional
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $25
+                            .body3 / Month
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'#!', classname:'text-center display-block hover-button-black bg-white border-blue-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-white
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-white
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-white
+                                .body3 Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-white
+                                .body3 Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Unlimited Projects
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow
+                        .heading6 Enterprise
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $100
+                            .body3 / Month
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'#!', classname:'text-center display-block hover-bg-blue bg-white border-blue-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Unlimited Projects
+
+        .list-pricing-year.hide.mt-60
+            .row.row-gap-32
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow
+                        .heading6 Freebie
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $0
+                            .body3 / Year
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'#!', classname:'text-center display-block hover-bg-blue bg-white border-blue-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Unlimited Projects
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow.bg-blue.text-white
+                        .heading6 Professional
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $200
+                            .body3 / Year
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'#!', classname:'text-center display-block hover-button-black bg-white border-blue-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-white
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-white
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-white
+                                .body3 Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-white
+                                .body3 Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph-light.ph-x-circle.fs-32.text-placehover
+                                .body3.text-placehover Unlimited Projects
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow
+                        .heading6 Enterprise
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $800
+                            .body3 / Year
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'#!', classname:'text-center display-block hover-bg-blue bg-white border-blue-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-blue
+                                .body3 Unlimited Projects

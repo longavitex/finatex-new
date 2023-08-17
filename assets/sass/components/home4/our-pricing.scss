@@ -1,0 +1,53 @@
+.pricing-block.style-four {
+    .pricing-main {
+        .heading {
+            .switch {
+                &.enable {
+                    .bg-placehover {
+                        background-color: var(--success);
+                    }
+                }
+            }
+        }
+
+        .list-pricing {
+            .row {
+                >div {
+                    &:nth-child(2) {
+                        .pricing-item {
+                            border-top: 4px solid var(--success);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes showList {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.list-pricing.hide {
+    display: none;
+}
+
+.list-pricing.show {
+    display: block;
+    animation: showList ease-in-out 0.7s;
+}
+
+.list-pricing-year.hide {
+    display: none;
+}
+
+.list-pricing-year.show {
+    display: block;
+    animation: showList ease-in-out 0.7s;
+}

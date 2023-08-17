@@ -1,0 +1,29 @@
+include ../../mixins/button.pug
+
+.form-cta-block.benefit-two.mt-100
+    .bg-img 
+        img(src="assets/images/banner/form-benefit-two.png", alt="")
+    .container.h-100
+        .row.flex-between.h-100.row-gap-20
+            .col-12.col-xl-5.col-lg-6
+                .heading3.text-white Unlock financial potential with expert guidance. Plan for a secure future.
+                .body1.text-line.mt-16 Schedule a consultation now to be sure of the plan
+            .col-12.col-lg-6
+                .form-block.bora-16.bg-white.p-28.flex-columns-between.gap-20
+                    .heading6 request a call back
+                    .row.row-gap-20
+                        .col-12.col-sm-6 
+                            input(type="text" placeholder="Name").w-100.bg-surface.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                        .col-12.col-sm-6 
+                            input(type="text" placeholder="Email").w-100.bg-surface.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                        .col-12 
+                            select(name="categories").w-100.bg-surface.caption1.pl-12.pt-12.pb-12.bora-8
+                                option(value="Financial Planning") Financial Planning
+                                option(value="Business Planning") Business Planning
+                                option(value="Development Planning") Development Planning
+                            i.ph.ph-caret-down
+                        .col-12 
+                            textarea(name="", cols="10", rows="4" placeholder="Your Message").w-100.bg-surface.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                    .button-block 
+                        +button({type:'button', classname:'hover-button-black bg-blue text-white text-button pl-36 pr-36 pt-12 pb-12 bora-48', text:'Send Message'})
+

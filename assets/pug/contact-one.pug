@@ -1,0 +1,67 @@
+extends base/layout.pug
+block title
+  title Contact - Style 1
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-contact-one")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/contact.png', nav:'Home', nav1:'Contact Us', heading:'Contact Us', subHeading:"Explore our Contact Us page for prompt assistance from our dedicated team."})
+    .form-contact.style-one.mt-100 
+        .container 
+            .row.flex-center.row-gap-32
+                .col-12.col-xl-4
+                    .infor.bg-blue.bora-12.p-40
+                        .heading5.text-white Get it touch
+                        .body3.text-white.mt-8 We will get back to you within 24 hours, or call us everyday
+                        .mt-40
+                        include components/list-social/social-contact.pug
+                        .list-more-infor.mt-40 
+                            .item.flex-item-center.gap-12
+                                i.ph-bold.ph-clock.text-blue.bg-white.p-8.bora-50
+                                .line-y 
+                                .text-button.text-white 8AM - 6PM, Mon - sun
+                            .item.flex-item-center.gap-12.mt-20
+                                i.ph-fill.ph-phone.text-blue.bg-white.p-8.bora-50
+                                .line-y 
+                                .text-button.text-white 123 456 7890
+                            .item.flex-item-center.gap-12.mt-20
+                                i.ph-bold.ph-envelope-simple.text-blue.bg-white.p-8.bora-50
+                                .line-y 
+                                .text-button.text-white hi.avitex@gmail.com
+                            .item.flex-item-center.gap-12.mt-20
+                                i.ph-bold.ph-map-pin.text-blue.bg-white.p-8.bora-50
+                                .line-y 
+                                .text-button.text-white 4140 Rd. Allentown, New Mexico 31134
+                .col-12.col-xl-6.pl-55
+                    .form-block.flex-columns-between.gap-20
+                        .heading
+                            .heading5 Request a quote
+                            .body3.text-secondary.mt-8 We will get back to you within 24 hours, or call us everyday
+                        .row.row-gap-20
+                            .col-12.col-sm-6 
+                                input(type="text" placeholder="Name").w-100.bg-surface.text-secondary.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                            .col-12.col-sm-6 
+                                input(type="text" placeholder="Subject").w-100.bg-surface.text-secondary.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                            .col-12
+                                input(type="text" placeholder="Email").w-100.bg-surface.text-secondary.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                            .col-12 
+                                select(name="categories").w-100.bg-surface.text-secondary.caption1.pl-12.pt-12.pb-12.bora-8
+                                    option(value="Financial Planning") Financial Planning
+                                    option(value="Business Planning") Business Planning
+                                    option(value="Development Planning") Development Planning
+                                i.ph.ph-caret-down
+                            .col-12 
+                                textarea(name="", cols="10", rows="4" placeholder="Your Message").w-100.bg-surface.text-secondary.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                        include mixins/button.pug
+                        .button-block
+                            +button({type:'button', classname:'hover-border-blue bg-blue text-white text-button pl-36 pr-36 pt-12 pb-12 bora-48', text:'Submit request'})
+    include components/scroll-to-top.pug
+    .pb-100
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

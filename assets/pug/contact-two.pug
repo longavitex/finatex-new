@@ -1,0 +1,62 @@
+extends base/layout.pug
+block title
+    title Contact - Style 2
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-contact-two")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/contact.png', nav:'Home', nav1:'Contact Us', heading:'Contact Us', subHeading:"Explore our Contact Us page for prompt assistance from our dedicated team."})
+    .form-contact.style-two.mt-100 
+        .container 
+            .row.flex-between.row-gap-32
+                .col-12.col-lg-5
+                    .infor.flex-columns-between.row-gap-32
+                        .heading
+                            .title Contact us
+                            .heading3.mt-12 Get it touch
+                            .body3.mt-8 We will get back to you within 24 hours, or call us everyday
+                        .list-more-infor
+                            .item.flex-item-center.gap-12
+                                i.ph-fill.ph-phone.text-white.bg-on-surface.p-8.bora-50
+                                .line-y 
+                                .body2 123 456 7890
+                            .item.flex-item-center.gap-12.mt-20
+                                i.ph-bold.ph-envelope-simple.text-white.bg-on-surface.p-8.bora-50
+                                .line-y 
+                                .body2 hi.avitex@gmail.com
+                            .item.flex-item-center.gap-12.mt-20
+                                i.ph-bold.ph-map-pin.text-white.bg-on-surface.p-8.bora-50
+                                .line-y 
+                                .body2 4140 Rd. Allentown, New Mexico 31134
+                        include components/list-social/social-contact.pug
+                .col-12.col-lg-5
+                    .form-block.flex-columns-between.gap-20
+                        .row.row-gap-20
+                            .col-12.col-sm-6
+                                input(type="text" placeholder="Name").w-100.bg-surface.text-secondary.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                            .col-12.col-sm-6      
+                                input(type="text" placeholder="Subject").w-100.bg-surface.text-secondary.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                            .col-12
+                                input(type="text" placeholder="Email").w-100.bg-surface.text-secondary.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                            .col-12 
+                                select(name="categories").w-100.bg-surface.text-secondary.caption1.pl-12.pt-12.pb-12.bora-8
+                                    option(value="Financial Planning") Financial Planning
+                                    option(value="Business Planning") Business Planning
+                                    option(value="Development Planning") Development Planning
+                                i.ph.ph-caret-down
+                            .col-12 
+                                textarea(name="", cols="10", rows="4" placeholder="Your Questions...").w-100.bg-surface.text-secondary.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                        include mixins/button.pug
+                        .button-block
+                            +button({type:'button', classname:'bg-on-surface text-button text-white pl-36 pr-36 pt-12 pb-12 bora-48', text:'Send Message'})
+        .map-block.mt-100
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16894.73660956101!2d-99.18411676499272!3d19.41781376470434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201b420c8c849%3A0x84231ae36f6ec524!2sMuseo%20Nacional%20de%20Antropolog%C3%ADa!5e0!3m2!1svi!2s!4v1689137436245!5m2!1svi!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+    include components/scroll-to-top.pug
+block footer 
+    include components/footer/cta/cta-two.pug
+    div(class="style-one")
+        include components/footer/footer.pug
+block script 
+    include base/script.pug

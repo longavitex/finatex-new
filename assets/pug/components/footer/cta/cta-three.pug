@@ -1,0 +1,10 @@
+include ../../../mixins/button.pug
+
+.cta-three.bg-gradient
+    .container 
+        .row.flex-columns-center
+            .col-lg-7.col-md-8.col-11.text-center.heading3.text-white.pt-80 Join us now to experience the convenience of online banking!
+            .button-block.mt-32     
+                +button({type:'link', href:'contact-two.html', classname:'hover-bg-white bg-on-surface text-white text-button pl-24 pr-24 pt-12 pb-12 bora-8', text:'Get started', icon: 'ph-bold ph-arrow-right text-white fs-20'})
+            .bg-img.col-12.col-xl-7.col-lg-8.col-sm-11
+                img(src="assets/images/cta/cta-three.png", alt="").w-100

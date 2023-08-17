@@ -1,0 +1,38 @@
+include ../../mixins/button.pug
+
+.slider-block.style-one 
+    .prev-arrow.flex-center
+        i.ph-bold.ph-caret-left.text-white
+    .slider-main
+        .slider-item
+            .bg-img 
+                img(src="assets/images/slider/slider5-1.png", alt="").w-100.h-100
+            .container 
+                .text-content.flex-columns-between.row-gap-40
+                    .heading2.animate__animated.animate__fadeInUp.animate__delay-0-2s Invest in the Future of <br>Cryptocurrency with <br>
+                        span.text-blue Confidence
+                    .body2.text-secondary.animate__animated.animate__fadeInUp.animate__delay-0-5s Our platform offers secure and reliable investment <br>opportunities in the rapidly growing world of cryptocurrency.
+                    .button-block.animate__animated.animate__fadeInUp.animate__delay-0-8s
+                        +button({type:'link', href:'service-two.html', classname:'display-inline-block hover-button-black bg-blue text-white text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+        .slider-item
+            .bg-img 
+                img(src="assets/images/slider/slider5-3.png", alt="").w-100.h-100
+            .container 
+                .text-content.flex-columns-between.row-gap-40
+                    .heading2 Empower Your <br>
+                        span.text-blue Financial Future
+                    .body2.text-secondary Empower Your Financial Future: <br>Unleash the Power of Your Finances and Achieve Your Dreams
+                    .button-block
+                        +button({type:'link', href:'service-two.html', classname:'display-inline-block hover-button-black bg-blue text-white text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+        .slider-item
+            .bg-img 
+                img(src="assets/images/slider/slider5-2.png", alt="").w-100.h-100
+            .container 
+                .text-content.flex-columns-between.row-gap-40
+                    .heading2 Powerful Payment <br>Solutions for <br>
+                        span.text-blue Seamless Transactions
+                    .body2.text-secondary Trust us to help you navigate the complex landscape and <br>achieve your financial goals with peace of mind.
+                    .button-block
+                        +button({type:'link', href:'service-two.html', classname:'display-inline-block hover-button-black bg-blue text-white text-button pl-28 pr-28 pt-12 pb-12 bora-8', text:'Discovery now'})
+    .next-arrow.flex-center
+        i.ph-bold.ph-caret-right.text-white

@@ -1,0 +1,27 @@
+extends base/layout.pug
+block title
+  title Service Style 2
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-service-tab-style")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/about1.png', nav:'Home', nav1:'Services', heading:'Our Services', subHeading:'We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy.'})
+    .service-tab-style.mt-100
+      .list-nav.flex-center.gap-8.flex-wrap
+        .nav-item.text-button-small.text-secondary.pt-8.pb-8.pl-20.pr-20.pointer&attributes({"data-name":"cryptocurrency financial"}) Cryptocurrency Financial
+        .nav-item.text-button-small.text-secondary.pt-8.pb-8.pl-20.pr-20.pointer&attributes({"data-name":"payment solution"}) Payment Solution
+        .nav-item.text-button-small.text-secondary.pt-8.pb-8.pl-20.pr-20.pointer&attributes({"data-name":"financial planning"}).active Financial Planning
+        .nav-item.text-button-small.text-secondary.pt-8.pb-8.pl-20.pr-20.pointer&attributes({"data-name":"blockchain"}) Blockchain
+        .nav-item.text-button-small.text-secondary.pt-8.pb-8.pl-20.pr-20.pointer&attributes({"data-name":"online banking"}) Online Banking
+        .nav-item.text-button-small.text-secondary.pt-8.pb-8.pl-20.pr-20.pointer&attributes({"data-name":"personal financial"}) Personal Financial
+      include components/service/service-four.pug
+    include components/scroll-to-top.pug
+    .pb-100
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

@@ -1,0 +1,19 @@
+.form-cta-block.benefit-three {
+    height: unset !important;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (max-width: 767.99px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .container>.row>div:last-child .form-block button {
+        border: none;
+
+        &:hover {
+            background-color: var(--blue);
+            color: var(--white);
+        }
+    }
+}

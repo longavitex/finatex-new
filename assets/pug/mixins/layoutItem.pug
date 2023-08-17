@@ -1,0 +1,21 @@
+mixin layoutItem(props = {})
+    -var {classname = '', heading, body, styleBtn, textBtn, video, thumbnail, img} = props
+    div(class=`${classname} layout-item mt-100`)
+        .container 
+            .row.row-gap-32
+                .col-12.col-lg-6.pr-40.flex-column.justify-content-center
+                    .heading3!= heading
+                    .body2.text-secondary.mt-20!= body
+                    .button-block.mt-24
+                        include ../mixins/button.pug
+                        +button({type:'link', href:'contact-two.html', classname:`${styleBtn} text-button display-inline-block pt-12 pb-12 pl-28 pr-28 bora-8`, text:`${textBtn}`, icon:'ph-bold ph-arrow-right text-white fs-20'})    
+                .col-12.col-lg-6.pl-55
+                    if(img) 
+                        .bg-img.w-100.overflow-hidden.bora-20
+                            img(src=`${img}`, alt="").w-100.h-100.hover-scale.display-block
+                    if(thumbnail) 
+                        .bg-video.w-100.overflow-hidden.bora-20
+                            img(src=`${thumbnail}`, alt="").w-100.display-block
+                            i.ph-fill.ph-play.fs-28.bg-white.bora-50
+        
+    

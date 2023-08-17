@@ -1,0 +1,66 @@
+.content-detail-block .container > .row > div:last-child .list-nav .nav-item.active, .content-detail-block .container > .row > div:last-child .list-nav .nav-item:hover {
+  background-color: var(--surface);
+}
+.content-detail-block .container > .row > div:last-child .list-nav .nav-item.active .text-secondary, .content-detail-block .container > .row > div:last-child .list-nav .nav-item:hover .text-secondary {
+  color: var(--on-surface);
+}
+.content-detail-block .container > .row > div:last-child .list-nav .nav-item.active i, .content-detail-block .container > .row > div:last-child .list-nav .nav-item:hover i {
+  visibility: visible;
+}
+.content-detail-block .container > .row > div:last-child .ads-block {
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+}
+.content-detail-block .container > .row > div:last-child .ads-block .bg-img {
+  width: 100%;
+}
+.content-detail-block .container > .row > div:last-child .ads-block .bg-img img {
+  width: 100%;
+  z-index: -1;
+}
+.content-detail-block .container > .row > div:last-child .ads-block .text {
+  position: absolute;
+  left: 32px;
+  top: 36px;
+  bottom: 36px;
+}
+@media (max-width: 1169.99px) {
+  .content-detail-block .container > .row > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .content-detail-block .container > .row > div:last-child .more-infor,
+  .content-detail-block .container > .row > div:last-child .ads-block {
+    width: 48%;
+  }
+  .content-detail-block .container > .row > div:last-child .ads-block {
+    margin-top: 0;
+    height: 100%;
+  }
+  .content-detail-block .container > .row > div:last-child .ads-block .bg-img,
+  .content-detail-block .container > .row > div:last-child .ads-block img {
+    height: 100%;
+  }
+  .content-detail-block .container > .row > div:last-child .ads-block .text {
+    top: 25%;
+    bottom: 25%;
+  }
+}
+@media (max-width: 767.99px) {
+  .content-detail-block .container > .row > div:last-child {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .content-detail-block .container > .row > div:last-child .more-infor,
+  .content-detail-block .container > .row > div:last-child .ads-block {
+    width: 100%;
+  }
+}
+@media (max-width: 575.99px) {
+  .content-detail-block .container > .row > div:last-child .ads-block .text {
+    top: 20%;
+    bottom: 20%;
+  }
+}

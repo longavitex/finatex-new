@@ -1,0 +1,25 @@
+// Section CTA: Take control of your financial future - Home4 (Start)
+.cta-block.style-four {
+    position: relative;
+    width: 100%;
+
+    .bg-cta {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .container {
+        >div, a {
+            z-index: 1;
+        }
+    }
+}
+// Section CTA: Take control of your financial future - Home4 (End)

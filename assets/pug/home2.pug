@@ -1,0 +1,27 @@
+extends base/layout.pug
+block title
+  title Homepage 2 - Financial Planning
+block header 
+  include components/header/top-nav/top-nav-two.pug
+  div(class="style-subpage style-home-two")
+    include components/header/menu/menu-two.pug
+block content
+  include components/slider/slider-two.pug
+  div(class="style-two")
+    include components/partner/partner-5col-one.pug
+  include components/home2/financial-assessment.pug
+  div(class="style-two")
+    include components/home2/count-number.pug
+  include components/home2/our-project-two.pug
+  include components/service/service-two.pug
+  include components/testimonials/testimonials-two.pug
+  include components/benefit/benefit-two.pug
+  include components/home1/our-blog.pug
+  include components/scroll-to-top.pug
+  .pb-100
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-two")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

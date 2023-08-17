@@ -1,0 +1,16 @@
+include ../../../mixins/button.pug
+
+.cta-block.style-five.mt-100
+    .container 
+        .content
+            .bg-cta.w-100
+                img(src="assets/images/cta/bg-cta5.png", alt="").w-100.h-100
+            .text.pt-70.pb-70.pl-100
+                .row
+                    .col-12.col-xl-8
+                        .heading3.text-white Empower Your Finances with Cryptocurrency
+                        .body3.text-white.mt-16 Discover the transformative power of cryptocurrency and revolutionize your financial journey. Join us now and embark on a path to financial empowerment
+                        .button-block.flex-item-center.mt-32.gap-16
+                            +button({type:'link', href:'service-one.html', classname:'hover-bg-white bg-on-surface text-white text-button pl-55 pr-55 pt-14 pb-14 bora-8', text:'Discovery now'})
+                            +button({type:'link', href:'contact-two.html', classname:'hover-button-black bg-white text-button pl-28 pr-28 pt-14 pb-14 bora-8', text:'(00) 123 456 789', icon: 'ph-fill ph-phone'})
+            

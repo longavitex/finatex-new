@@ -1,0 +1,102 @@
+.financial-assessment-block {
+    .nav-infor {
+        .list-nav {
+            display: inline-flex;
+            border-bottom: 2px solid #E5E5E5;
+
+            .nav-item {
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 2px;
+                    background-color: var(--blue);
+                    transition: all ease 0.3s;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .nav-item.active {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        .description.hide {
+            display: none;
+        }
+
+        .description.show {
+            display: block;
+            animation: show ease 0.3s !important;
+        }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
+    .button-block {
+        .button-share {
+            &:last-child {
+                &:hover {
+                    border: 2px solid var(--on-surface);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1169.99px) {
+        .row {
+            row-gap: 32px;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .flex-column {
+                gap: 24px;
+
+                .mt-40 {
+                    margin-top: 0px;
+                }
+
+                .ml-40 {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 575.99px) {
+        .row {
+            row-gap: 16px;
+
+            .flex-column {
+                gap: 12px;
+            }
+        }
+    }
+
+    @media (max-width: 459.99px) {
+        .button-block {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

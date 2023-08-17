@@ -1,0 +1,19 @@
+.payment-gateway-one.mt-100.bg-surface
+    .bg-img 
+        img(src="assets/images/component/gateway1.png", alt="").w-100.h-100
+    .container
+        .row
+            .col-12.col-xl-6
+                .payment-infor.flex-columns-between
+                    .heading.flex-item-center.gap-16
+                        .bg-img 
+                            img(src="assets/images/component/avatar-gateway1.png", alt="").w-100
+                        .text-button.text-secondary Trusted by 50M+ People <br>around the globe
+                    .text
+                        .heading3 Payment Gateway Services
+                        .body3.text-secondary.mt-24 We provide reliable and secure payment gateway services for businesses of all sizes. With our cutting-edge technology and 24/7 customer support, you can easily accept payments from customers all over the world.
+                    .button-block.flex-item-center.gap-24
+                        include ../../mixins/button.pug
+                        +button({type:'link', href:"contact-two.html", classname:'box-shadow hover-button-black text-white bg-blue text-button pt-12 pb-12 pl-36 pr-36 bora-48', text:'Get started'})    
+                        +button({type:'link', href:"contact-two.html", classname:'box-shadow hover-button-black text-on-surface bg-white text-button pt-12 pb-12 pl-36 pr-36 bora-48', text:'(00) 123 456 789', icon:'ph ph-phone fs-20'})    
+                        img(src="assets/images/component/gateway1-dot.png", alt="")

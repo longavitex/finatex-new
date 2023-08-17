@@ -1,0 +1,48 @@
+extends base/layout.pug
+block title
+  title FAQs
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-faqs")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/contact.png', nav:'Home', nav1:'FAQs', heading:'FAQs', subHeading:"Explore our frequently asked questions and our answers to them."})
+    
+    include mixins/questionItem.pug
+    .faq-block.mt-100
+        .container
+            .row.flex-center 
+                .col-12.col-lg-8
+                    .list-question 
+                        .heading6 Payments
+                        +questionItem({title:'Which device can I use to enter your service?', content:'You can access our service from any device with an internet connection.'})
+                        +questionItem({title:'What are your products and services?', content:'Our products and services include [describe your products/services briefly].'})
+                        +questionItem({title:'How can I contact your customer support department?', content:'You can contact our customer support department by [provide contact information such as phone number or email] during our business hours. Our team is ready to assist you with any inquiries or concerns.'})
+                        +questionItem({title:"Can I return items if I'm not satisfied?", content:'Yes, you can return items within [specify time frame] if you are not satisfied. Please review our return policy for further instructions.'})
+                    .list-question.mt-40
+                        .heading6 Suggestion
+                        +questionItem({title:'What is your warranty policy?', content:'We offer a [specify duration] warranty on our products. Please see our warranty policy for specific details and coverage.'})
+                        +questionItem({title:'What are your shipping and delivery policies?', content:'Our shipping and delivery policies vary depending on the location and shipping method chosen. Please refer to our shipping page for detailed information.'})
+                        +questionItem({title:'What payment methods do you accept?', content:'We accept various payment methods, including [list accepted payment methods]. You can choose the most convenient option during the checkout process.'})
+                        +questionItem({title:'Do you have a customer loyalty program?', content:'Yes, we have a customer loyalty program. Earn points with each purchase and enjoy exclusive benefits. Join now to start earning rewards!'})
+    .more-question-block.mt-100
+        .container
+            .row.flex-center 
+                .col-12.col-lg-8
+                    .content.bg-gradient-blue.bora-16.flex-columns-center.gap-16.pt-32.pb-32.pl-28.pr-28
+                        .bg-img.w-120
+                            img(src="assets/images/component/avatar-group.png", alt="").w-100
+                        .text.text-center
+                            .heading6.text-white Still have questions?
+                            .body3.text-white.mt-8 Can’t find the answer you’re looking for? Please chat to our friendly team.
+                        include mixins/button.pug
+                        +button({type:'link', href:'contact-two.html', classname:'hover-button-black bg-blue text-white text-button pl-36 pr-36 pt-12 pb-12 bora-48', text:'Chat Center'})
+    include components/scroll-to-top.pug
+    .pb-100     
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

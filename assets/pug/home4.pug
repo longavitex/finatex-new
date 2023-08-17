@@ -1,0 +1,30 @@
+extends base/layout.pug
+block title
+  title Homepage 4 - Personal Finance
+block header 
+  include components/header/top-nav/top-nav-four.pug
+  div(class="style-subpage style-home-four")
+    include components/header/menu/menu-four.pug
+block content
+  include components/slider/slider-four.pug
+  div(class="style-four")
+    include components/partner/partner-5col-one.pug
+  div(class="service-style-four pt-100 bg-white")
+    .heading3.text-center Our Services
+    include components/service/service-four.pug
+  include components/home4/count-number.pug
+  include components/modal-video.pug
+  include components/home4/case-study.pug
+  include components/testimonials/testimonials-four.pug
+  div(class="pricing-block style-four")
+    include components/home4/our-pricing.pug
+  include components/footer/cta/cta-four.pug
+  include components/home4/our-blog.pug
+  include components/home4/form-request.pug
+  div(class="style-four")
+    include components/scroll-to-top.pug
+block footer 
+  div(class="style-four")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

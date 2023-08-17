@@ -1,0 +1,32 @@
+.blog-list.style-four .blog-item-main .bg-img {
+  border-radius: 8px;
+}
+.blog-list.style-four .blog-item-main .bg-img img {
+  transition: all ease 0.4s;
+}
+.blog-list.style-four .blog-item-main .infor .heading4 {
+  transition: all ease 0.4s;
+}
+.blog-list.style-four .blog-item-main:hover .bg-img img {
+  transform: scale(1.06);
+}
+.blog-list.style-four .blog-item-main:hover .infor .heading4 {
+  color: var(--success);
+}
+.blog-list.style-four .list-blog-related a .bg-img img {
+  transition: all ease 0.4s;
+}
+.blog-list.style-four .list-blog-related a .infor .heading6 {
+  transition: all ease 0.4s;
+}
+.blog-list.style-four .list-blog-related a:hover .bg-img img {
+  transform: scale(1.06);
+}
+.blog-list.style-four .list-blog-related a:hover .infor .heading6 {
+  color: var(--success);
+}
+@media (max-width: 991.99px) {
+  .blog-list.style-four .container > .row .pr-55 {
+    padding-right: 15px;
+  }
+}

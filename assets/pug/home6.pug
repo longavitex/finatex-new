@@ -1,0 +1,29 @@
+extends base/layout.pug
+block title
+  title Homepage 6 - Blockchain
+block header 
+  div(class="style-home-six")
+    include components/header/top-nav/top-nav-one.pug
+  div(class="style-subpage style-home-six")
+    include components/header/menu/menu-six.pug
+block content
+  include components/slider/slider-six.pug
+  div(class="style-six")
+    include components/partner/partner-5col-one.pug
+  include components/home6/video-about.pug
+  include components/service/service-six.pug
+  include components/home6/people-trust-us.pug
+  include components/home6/pricing.pug
+  include components/home6/how-we-work.pug
+  include components/testimonials/testimonials-six.pug
+  include components/home6/lastest-blog.pug
+  include components/modal-video.pug
+  div(class="style-six")
+    include components/scroll-to-top.pug
+  div(class="style-six")
+    include components/home6/form-cta.pug
+block footer 
+  div(class="style-six")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

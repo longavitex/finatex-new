@@ -1,0 +1,206 @@
+.testimonials-six .container > .row {
+  margin-top: 90px;
+}
+.testimonials-six .container > .row > div .row {
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(30px);
+  overflow: hidden;
+}
+.testimonials-six .container > .row > div .row > div:first-child .comment-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+}
+.testimonials-six .container > .row > div .row > div:first-child .comment-item i.icon-quotes {
+  opacity: 0.2;
+  color: var(--white);
+}
+.testimonials-six .container > .row > div .row > div:last-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+.testimonials-six .container > .row .slick-list {
+  overflow: unset;
+}
+.testimonials-six .container > .row .slick-list .slick-slide {
+  padding: 0 20px;
+}
+.testimonials-six .container > .row .slick-list .slick-slide .row {
+  transform: scale(0.8);
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-list .slick-center .row {
+  transform: scale(1);
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-list .slick-center .row > div:first-child .comment-item i.icon-quotes {
+  font-size: 70px;
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-list .slick-center .row > div:first-child .comment-item .star {
+  margin-top: 40px;
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-list .slick-center .row > div:first-child .comment-item .star i {
+  font-size: 30px;
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-list .slick-center .row > div:first-child .comment-item .heading7 {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-list .slick-center .row > div:first-child .comment-item .infor {
+  margin-top: 24px;
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-list .slick-center .row > div:first-child .comment-item .infor .text-button-small {
+  font-size: 16px;
+  line-height: 26px;
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-list .slick-center .row > div:first-child .comment-item .infor .caption2 {
+  font-weight: 500;
+  transition: all ease 0.7s;
+}
+.testimonials-six .container > .row .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 16px;
+}
+.testimonials-six .container > .row .slick-dots li {
+  position: relative;
+  border: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.testimonials-six .container > .row .slick-dots li button {
+  display: none;
+}
+.testimonials-six .container > .row .slick-dots li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  transition: 0.5s;
+}
+.testimonials-six .container > .row .slick-dots li.slick-active {
+  border: 1px solid var(--white);
+  background-color: var(--on-surface);
+}
+.testimonials-six .container > .row .slick-dots li.slick-active::after {
+  background-color: var(--white);
+  border: 1px solid var(--on-surface);
+}
+@media (max-width: 1600.99px) {
+  .testimonials-six .container > .row .slick-list {
+    overflow: unset;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide {
+    padding: 0 20px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-center .row {
+    transform: scale(1);
+  }
+}
+@media (max-width: 1023.99px) {
+  .testimonials-six .container > .row {
+    margin-top: 40px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide {
+    padding: 0 60px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row {
+    transform: scale(1);
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item {
+    padding: 24px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item i.icon-quotes {
+    font-size: 32px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .star {
+    margin-top: 16px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .star i {
+    font-size: 14px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .heading7 {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .infor {
+    margin-top: 16px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .infor .text-button-small {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .testimonials-six .container > .row .slick-dots {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767.99px) {
+  .testimonials-six .container > .row .slick-list .slick-slide {
+    padding: 0 32px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row {
+    flex-direction: column-reverse;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item {
+    padding: 24px 12px;
+  }
+}
+@media (max-width: 767.99px) {
+  .testimonials-six .container > .row {
+    margin-top: 24px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide {
+    padding: 0 30px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item i.icon-quotes {
+    font-size: 24px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .star {
+    margin-top: 12px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .star i {
+    font-size: 12px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .heading7 {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .infor {
+    margin-top: 12px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .infor .text-button-small {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item .infor .caption2 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 575.99px) {
+  .testimonials-six .container > .row .slick-list .slick-slide .row > div:first-child .comment-item {
+    padding: 16px 8px 20px;
+  }
+}

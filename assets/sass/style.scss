@@ -1,0 +1,95 @@
+:root {
+    --on-surface: #121212;
+    --secondary: #64666C;
+    --line: #E5E5E5;
+    --background: #F5F5F5;
+    --surface: #F5F5F2;
+    --blue: #2868D8;
+    --critical: #EB4D4D;
+    --success: #37CC8E;
+    --primary: #2ED197;
+    --orange: #EA603F;
+    --white: #FFFFFF;
+    --deep-purple: #15143B;
+    --gradient: #5D47E2;
+    --dark: #0F1E37;
+    --grey: #3F4B5F;
+    --dark-blue: #173363;
+    --dark-purple: #130E38;
+    --placehover: #B1B1B1;
+    --yellow: #F2C94C;
+}
+
+
+@import "base/reset.scss";
+@import "base/container.scss";
+@import "base/global.scss";
+
+@import "components/header/menu/header-menu.scss";
+@import "components/header/top-nav/top-nav.scss";
+@import "components/slider/slider-home.scss";
+@import "components/home1/payment-gateway.scss";
+@import "components/home1/benefit.scss";
+@import "components/home1/faqs.scss";
+@import "components/home1/form-request.scss";
+
+@import "components/home2/financial-assessment.scss";
+@import "components/home2/count-number.scss";
+@import "components/home2/our-project.scss";
+@import "components/home2/benefit.scss";
+
+@import "components/home3/features.scss";
+@import "components/home3/benefit.scss";
+
+@import "components/home4/count-number.scss";
+@import "components/home4/our-pricing.scss";
+@import "components/home4/our-blog.scss";
+@import "components/home4/form-request.scss";
+
+@import "components/home5/about.scss";
+@import "components/home5/card.scss";
+@import "components/home5/project.scss";
+@import "components/home5/form-request.scss";
+
+@import "components/home6/video-about.scss";
+@import "components/home6/people-trust-us.scss";
+@import "components/home6/pricing.scss";
+@import "components/home6/how-we-work.scss";
+
+@import "components/slider/slider-subpage.scss";
+@import "components/service-block.scss";
+
+@import "components/case-studies/case-style.scss";
+@import "components/case-studies/case-detail.scss";
+
+@import "components/blog/blog-list.scss";
+@import "components/blog/blog-item.scss";
+@import "components/blog/blog-detail.scss";
+
+@import "components/testimonials/testimonials-two.scss";
+@import "components/testimonials/testimonials-three.scss";
+@import "components/testimonials/testimonials-six.scss";
+@import "components/form-contact.scss";
+@import "components/questionFAQ.scss";
+@import "components/list-pricing.scss";
+@import "components/our-team.scss";
+@import "components/scroll-to-top.scss";
+
+@import "components/form-cta/form-cta-about.scss";
+@import "components/footer/cta/cta-two.scss";
+@import "components/footer/cta/cta-three.scss";
+@import "components/footer/cta/cta-four.scss";
+@import "components/footer/cta/cta-five.scss";
+@import "components/footer/footer.scss";
+
+@import "layout/modal-video.scss";
+@import "layout/filter-item.scss";
+@import "layout/header-menu.scss";
+@import "layout/top-nav.scss";
+@import "layout/footer.scss";
+@import "layout/service-detail.scss";
+@import "layout/layout-item.scss";
+@import "layout/list-partner.scss";
+@import "layout/partner-5col.scss";
+
+@import "layout/font-reduction.scss";

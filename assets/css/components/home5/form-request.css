@@ -1,0 +1,38 @@
+.style-five .form-request {
+  background-color: var(--surface);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.style-five .form-request .container .heading {
+  display: block;
+}
+.style-five .form-request .container .heading .body3 {
+  margin-top: 24px;
+}
+.style-five .form-request .container .form {
+  margin-top: 24px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 16px;
+}
+.style-five .form-request .container .form input,
+.style-five .form-request .container .form select {
+  background-color: #fff;
+  border: 1px solid var(--line);
+}
+.style-five .form-request .container .form input:focus,
+.style-five .form-request .container .form select:focus {
+  border: 1px solid var(--blue);
+}
+@media (max-width: 767.99px) {
+  .style-five .form-request {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .style-five .form-request .container .heading .body3 {
+    margin-top: 12px;
+  }
+  .style-five .form-request .container .form {
+    margin-top: 12px;
+  }
+}

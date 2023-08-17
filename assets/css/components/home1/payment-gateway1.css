@@ -1,0 +1,104 @@
+.payment-gateway-one {
+  position: relative; }
+  .payment-gateway-one > .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    bottom: 0; }
+    .payment-gateway-one > .bg-img img {
+      object-fit: cover; }
+  .payment-gateway-one .row {
+    justify-content: right; }
+    .payment-gateway-one .row .col-12.col-xl-6 .payment-infor {
+      padding-top: 150px;
+      padding-bottom: 150px;
+      padding-left: 80px;
+      gap: 32px; }
+      .payment-gateway-one .row .col-12.col-xl-6 .payment-infor .heading .bg-img {
+        width: 120px; }
+  .payment-gateway-one .button-block {
+    position: relative; }
+    .payment-gateway-one .button-block .button-share:nth-child(2) {
+      z-index: 1; }
+    .payment-gateway-one .button-block > img {
+      position: absolute;
+      left: 376px;
+      z-index: 0; }
+  @media (max-width: 1169.99px) {
+    .payment-gateway-one > .bg-img {
+      width: 100%;
+      position: relative; }
+    .payment-gateway-one .row .col-12.col-xl-6 .payment-infor {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 0px; } }
+  @media (max-width: 767.99px) {
+    .payment-gateway-one .button-block .button-share.pt-14.pb-14 {
+      padding: 11px 24px; }
+    .payment-gateway-one .button-block img {
+      left: 300px; } }
+  @media (max-width: 399.99px) {
+    .payment-gateway-one .button-block {
+      flex-direction: column;
+      align-items: flex-start; }
+      .payment-gateway-one .button-block img {
+        left: 144px;
+        top: 50px; } }
+
+.payment-gateway-two .container .row.row-gap-32 > div:last-child .right {
+  position: relative; }
+  .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item {
+    position: absolute; }
+  .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(2) {
+    left: 40px;
+    top: 18%; }
+    .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(2) i {
+      padding: 16px 12px; }
+  .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(3) {
+    right: 0px;
+    top: 30%; }
+  .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(4) {
+    right: 40px;
+    bottom: 0px; }
+  @media (max-width: 767.99px) {
+    .payment-gateway-two .container .row.row-gap-32 > div:last-child .right {
+      padding-left: 0; } }
+  @media (max-width: 575.99px) {
+    .payment-gateway-two .container .row.row-gap-32 > div:last-child .right {
+      padding-left: 0; }
+      .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(2) {
+        padding: 8px 12px;
+        border-radius: 16px;
+        gap: 8px;
+        left: 10px; }
+        .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(2) i {
+          font-size: 14px;
+          padding: 10px 8px;
+          border-radius: 12px; }
+        .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(2) .text .heading7 {
+          font-size: 12px;
+          line-height: 16px; }
+      .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(3) {
+        padding: 8px 12px;
+        border-radius: 16px;
+        gap: 8px;
+        right: -10px; }
+        .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(3) i {
+          font-size: 20px;
+          padding: 0;
+          border-radius: 12px; }
+        .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(3) .text .heading7 {
+          font-size: 12px;
+          line-height: 16px; }
+      .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(4) {
+        padding: 8px 12px;
+        border-radius: 16px;
+        gap: 8px; }
+        .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(4) i {
+          font-size: 20px;
+          padding: 8px 9px;
+          border-radius: 12px; }
+        .payment-gateway-two .container .row.row-gap-32 > div:last-child .right .feature-item:nth-child(4) .text .heading7 {
+          font-size: 12px;
+          line-height: 16px; } }

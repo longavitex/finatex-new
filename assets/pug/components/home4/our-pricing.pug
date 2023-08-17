@@ -1,0 +1,184 @@
+include ../../mixins/button.pug
+
+.pricing-main.pt-100.pb-100.bg-white
+    .container 
+        .heading.flex-columns-center.row-gap-40
+            .title.text-center
+                .heading3 Our Pricing
+                .body1.mt-8 Choose a plan that’s right for you
+            .choose-type.flex-item-center.gap-20
+                .body3 Pay Monthly
+                .switch 
+                    .bg-placehover
+                .body3.text-placehover Pay Yearly
+        .list-pricing.mt-60.show
+            .row.row-gap-32
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow
+                        .heading6 Freebie
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $0
+                            .body3 / Month
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block hover-bg-success bg-white border-line-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Unlimited Projects
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow.bg-white
+                        .heading.flex-between.gap-12
+                            .heading6 Professional
+                            .text-button-small.pt-4.pb-4.pl-12.pr-12.bora-100.bg-success Save 25%
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $25
+                            .body3 / Month
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block hover-button-black bg-success text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Unlimited Projects
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow
+                        .heading6 Enterprise
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $100
+                            .body3 / Month
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block hover-bg-success bg-white border-line-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Unlimited Projects
+
+        .list-pricing-year.mt-60.hide
+            .row.row-gap-32
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow
+                        .heading6 Freebie
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $0
+                            .body3 / Year
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block hover-bg-success bg-white border-line-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Unlimited Projects
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow.bg-white
+                        .heading.flex-between.gap-12
+                            .heading6 Professional
+                            .text-button-small.pt-4.pb-4.pl-12.pr-12.bora-100.bg-success Save 25%
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $200
+                            .body3 / Year
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block hover-button-black bg-success text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph.ph-x-circle.fs-32.text-secondary
+                                .body3.text-secondary Unlimited Projects
+                .col-12.col-lg-4
+                    .pricing-item.pt-36.pb-36.pl-24.pr-24.bora-16.box-shadow
+                        .heading6 Enterprise
+                        .price.flex-item-center.gap-8.mt-20
+                            .heading2 $800
+                            .body3 / Year
+                        .button-block.w-100.mt-24
+                            +button({type:'link', href:'contact-two.html', classname:'text-center display-block hover-bg-success bg-white border-line-1px text-on-surface text-button w-100 pt-12 pb-12 bora-100', text:'Get Started'})
+                        .list-feature.mt-40.flex-column.gap-12
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 20,000+ of PNG & SVG graphics
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Access to 100 million stock images
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Upload custom icons and fonts
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Unlimited Sharing
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Upload graphics & video in up to 4k
+                            .item.flex-item-center.gap-16 
+                                i.ph-fill.ph-check-circle.fs-32.text-deep-purple
+                                .body3 Unlimited Projects

@@ -1,0 +1,296 @@
+.testimonials-six {
+    .container {
+        >.row {
+            margin-top: 90px;
+
+            >div {
+                .row {
+                    border-radius: 16px;
+                    background: linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+                    backdrop-filter: blur(30px);
+                    overflow: hidden;
+
+                    >div {
+                        &:first-child {
+                            .comment-item {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                padding: 32px;
+
+                                i.icon-quotes {
+                                    opacity: 0.2;
+                                    color: var(--white);
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+
+            .slick-list {
+                overflow: unset;
+
+                .slick-slide {
+                    padding: 0 20px;
+
+                    .row {
+                        transform: scale(0.8);
+                        transition: all ease 0.7s;
+                    }
+                }
+
+                .slick-center {
+                    .row {
+                        transform: scale(1);
+                        transition: all ease 0.7s;
+
+                        >div {
+                            &:first-child {
+                                .comment-item {
+                                    i.icon-quotes {
+                                        font-size: 70px;
+                                        transition: all ease 0.7s;
+                                    }
+
+                                    .star {
+                                        margin-top: 40px;
+                                        transition: all ease 0.7s;
+
+                                        i {
+                                            font-size: 30px;
+                                            transition: all ease 0.7s;
+                                        }
+                                    }
+
+                                    .heading7 {
+                                        margin-top: 20px;
+                                        font-size: 24px;
+                                        line-height: 30px;
+                                        transition: all ease 0.7s;
+                                    }
+
+                                    .infor {
+                                        margin-top: 24px;
+                                        transition: all ease 0.7s;
+
+                                        .text-button-small {
+                                            font-size: 16px;
+                                            line-height: 26px;
+                                            transition: all ease 0.7s;
+                                        }
+
+                                        .caption2 {
+                                            font-weight: 500;
+                                            transition: all ease 0.7s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slick-dots {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 100px;
+                gap: 16px;
+
+                li {
+                    position: relative;
+                    border: none;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    button {
+                        display: none;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        border: 1px solid var(--white);
+                        transition: 0.5s;
+                    }
+
+                    &.slick-active {
+                        border: 1px solid var(--white);
+                        background-color: var(--on-surface);
+
+                        &::after {
+                            background-color: var(--white);
+                            border: 1px solid var(--on-surface);
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 1600.99px) {
+                .slick-list {
+                    overflow: unset;
+
+                    .slick-slide {
+                        padding: 0 20px;
+                    }
+
+                    .slick-center {
+                        .row {
+                            transform: scale(1);
+                        }
+                    }
+
+                }
+            }
+
+            @media (max-width: 1023.99px) {
+                margin-top: 40px;
+
+                .slick-list .slick-slide {
+                    padding: 0 60px;
+
+                    .row {
+                        transform: scale(1);
+
+                        >div {
+                            &:first-child {
+                                .comment-item {
+                                    padding: 24px;
+
+                                    i.icon-quotes {
+                                        font-size: 32px;
+                                    }
+
+                                    .star {
+                                        margin-top: 16px;
+
+                                        i {
+                                            font-size: 14px;
+                                        }
+                                    }
+
+                                    .heading7 {
+                                        margin-top: 16px;
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                    }
+
+                                    .infor {
+                                        margin-top: 16px;
+
+                                        .text-button-small {
+                                            font-size: 14px;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .slick-dots {
+                    margin-top: 40px;
+                }
+            }
+
+            @media (max-width: 767.99px) {
+                .slick-list .slick-slide {
+                    padding: 0 32px;
+
+                    .row {
+                        flex-direction: column-reverse;
+
+                        >div {
+                            &:first-child {
+                                .comment-item {
+                                    padding: 24px 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 767.99px) {
+                margin-top: 24px;
+
+                .slick-list .slick-slide {
+                    padding: 0 30px;
+
+                    .row {
+                        >div {
+                            &:first-child {
+                                .comment-item {
+                                    i.icon-quotes {
+                                        font-size: 24px;
+                                    }
+
+                                    .star {
+                                        margin-top: 12px;
+
+                                        i {
+                                            font-size: 12px;
+                                        }
+                                    }
+
+                                    .heading7 {
+                                        margin-top: 12px;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                    }
+
+                                    .infor {
+                                        margin-top: 12px;
+
+                                        .text-button-small {
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                        }
+
+                                        .caption2 {
+                                            font-size: 11px;
+                                            line-height: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 575.99px) {
+                .slick-list .slick-slide {
+
+                    .row {
+                        >div {
+                            &:first-child {
+                                .comment-item {
+                                    padding: 16px 8px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

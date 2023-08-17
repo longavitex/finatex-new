@@ -1,0 +1,21 @@
+include ../../mixins/serviceItem.pug
+
+.service-block.service-block-two.mt-100
+    .container 
+        .row.row-gap-32
+            .col-12.col-xl-4.flex-column.gap-16
+                .text-sub-heading2.text-blue Services
+                .heading3 Wealth Management Firm
+                .body3.text-secondary We specialize in providing asset management services and solutions for individuals and organizations.
+            .col12.col-xl-8
+                .list-service.pl-40
+                    .row.row-gap-32
+                        .col-12.col-lg-6.col-md-6
+                            +serviceItem({classname:'bora-8 p-24 bg-white box-shadow h-100', href:'service-portfolio-management.html', styleTwo: true, icon:'icon-coin-hand text-blue fs-48', title:'Budget planning', desc:'Stay in control of your finances with effortless tracking and monitoring of your transactions.', explore:true})
+                        .col-12.col-lg-6.col-md-6
+                            +serviceItem({classname:'bora-8 p-24 bg-white box-shadow h-100', href:'service-detail.html', styleTwo: true, icon:'icon-coin-pig text-blue fs-48', title:'Savings advice', desc:'Rest assured with our robust security measures to protect your transactions and sensitive.', explore:true})
+                        .col-12.col-lg-6.col-md-6
+                            +serviceItem({classname:'bora-8 p-24 bg-white box-shadow h-100', href:'service-research-analys.html', styleTwo: true, icon:'icon-coin-virus text-blue fs-48', title:'Financial assessment', desc:'Rest assured with our robust security measures to protect your transactions and sensitive.', explore:true})
+                        .col-12.col-lg-6.col-md-6
+                            +serviceItem({classname:'bora-8 p-24 bg-white box-shadow h-100', href:'service-investment-advice.html', styleTwo: true, icon:'icon-hand-protect text-blue fs-48', title:'Insurance advice', desc:'Rest assured with our robust security measures to protect your transactions and sensitive.', explore:true})
+    

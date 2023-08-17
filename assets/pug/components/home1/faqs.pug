@@ -1,0 +1,20 @@
+include ../../mixins/questionItem.pug
+
+.faqs-block.style-one.mt-100
+    .row.row-gap-32
+        .col-12.col-xl-6
+            .bg-img 
+                img(src="assets/images/component/item1.png", alt="")
+            .desc.bg-blue.flex-center
+                .content.gap-30
+                    i.icon-hand-team.icon-white
+                    .heading4.text-white We aim for a world of convenience and value for many customers
+        .col-12.col-xl-6.bg-surface
+            .content-main
+                .heading3 Frequently Asked questions
+                .list-question.mt-32
+                    +questionItem({classname:'open', title:'Which device can I use to enter your service?', content:'You can access our service from any device with an internet connection.'})
+                    +questionItem({title:'What are your products and services?', content:'Our products and services include [describe your products/services briefly].'})
+                    +questionItem({title:'How can I contact your customer support department?', content:'You can contact our customer support department by provide contact information during our business hours.'})
+                    +questionItem({title:"Can I return items if I'm not satisfied?", content:'Yes, you can return items within [specify time frame] if you are not satisfied.'})
+                    +questionItem({title:'Do you have a customer loyalty program?', content:'Yes, we have a customer loyalty program. Earn points with each purchase and enjoy exclusive benefits.'})

@@ -1,0 +1,142 @@
+extends base/layout.pug
+block title
+  title Blog Detail - Style 2
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-blog-detail-two")
+        include components/header/menu/menu-one.pug
+block content
+    div(class="blog-detail-two")
+        .slider-sub
+            .bg-img 
+                img(src=`assets/images/banner/blog.png`, alt="banner")
+            .container 
+                .heading-nav.gap-4.mt-32
+                    .caption1.text-white Home
+                    i.ph.ph-caret-double-right.text-white
+                    .caption1.text-white Blog
+                    i.ph.ph-caret-double-right.text-white
+                    .caption1.text-white Blog Detail
+                .text-nav.text-center
+                    .row.flex-center
+                        .col-xl-8.col-lg-9.col-md-10.col-sm-11.col-12
+                            .caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.display-inline-block Business
+                            .heading4.mt-16.text-white Where to grow your business as a photographer: site or social media?
+                            .date.flex-center.gap-16.mt-16
+                                .author.flex-item-center.gap-16
+                                    img(src="assets/images/blog/avatar.png", alt="").w-40.h-40
+                                    span.text-button.text-white Mark G 
+                                .space.fs-32.fw-400.text-white -
+                                .item-date.flex-item-center
+                                    i.ph-bold.ph-calendar-blank.text-white
+                                    span.ml-4.caption2.text-white 2 days ago
+        .blog-list.style-detail.mt-100
+            .container 
+                .row.flex-center
+                    .col-12.col-lg-8
+                        .blog-paragraph 
+                            .paragraph-heading.text-center
+                                .bg-img.mt-40
+                                    img(src="assets/images/blog/item8.png", alt="").w-100.bora-16
+                            .paragraph-content.mt-32
+                                .body2.text-secondary Attracting good money and achieving financial success is within your reach. With our innovative solutions and expert guidance, we empower you to unlock your creative business potential and thrive in today's competitive landscape.
+                                .review.p-12.mt-16
+                                    .body2 “ Seize control of your financial future and unleash your potential for success. Our expert guidance will empower you to navigate the intricacies of financial management. From budgeting and saving to investing and debt management, we provide the tools and knowledge you need to achieve your goals.”.
+                                    li.fs-12.fw-700.mt-16 Tony Nguyen, CEO of Avitex
+                            .image-center.row.mt-32
+                                .col-6 
+                                    img(src="assets/images/blog/item10.png", alt="").w-100.bora-12
+                                .col-6 
+                                    img(src="assets/images/blog/item9.png", alt="").w-100.bora-12
+                            .paragraph-content.mt-32
+                                .heading6 How to Saving Finacial
+                                .body2.text-secondary.mt-16 Let us help you navigate the complexities of the financial world, maximize your earnings, and turn your creative passion into a lucrative venture. It's time to unleash your full potential and embark on a journey towards financial prosperity.
+                                .list-feature.mt-32
+                                    .row.row-gap-12 
+                                        .col-12.col-lg-6.row-gap-12.flex-column
+                                            .item.flex-item-center.gap-12 
+                                                i.ph-fill.ph-check-circle.fs-20.text-blue
+                                                .text-button Identification of monthly income
+                                            .item.flex-item-center.gap-12 
+                                                i.ph-fill.ph-check-circle.fs-20.text-blue
+                                                .text-button Creation of savings and investment plan
+                                            .item.flex-item-center.gap-12 
+                                                i.ph-fill.ph-check-circle.fs-20.text-blue
+                                                .text-button Management and calculation of monthly expenses
+                                        .col-12.col-lg-6.row-gap-12.flex-column
+                                            .item.flex-item-center.gap-12 
+                                                i.ph-fill.ph-check-circle.fs-20.text-blue
+                                                .text-button Research and Analysis
+                                            .item.flex-item-center.gap-12 
+                                                i.ph-fill.ph-check-circle.fs-20.text-blue
+                                                .text-button Investment Management and Investment Advice
+                                            .item.flex-item-center.gap-12 
+                                                i.ph-fill.ph-check-circle.fs-20.text-blue
+                                                .text-button Education and Resources
+                                .mt-20
+                                .list-li.mt-20.pl-12.pr-12
+                                    li.body3.text-secondary 15+ years of industry experience designing, building, and supporting large-scale distributed systems in production, with recent experience in building large scale cloud services.
+                                    li.body3.text-secondary.mt-8 Deep knowledge and experience with different security areas like identity and access management, cryptography, network security, etc.
+                                    li.body3.text-secondary.mt-8 Experience with database systems and database internals, such as query engines and optimizers are a big plus. 
+                                    li.body3.text-secondary.mt-8 Strong fundamentals in computer science skills.
+                                .end.mt-20.body2.text-secondary Saving money is an essential skill for financial stability and long-term success. We understand the importance of efficient resource management, and we're here to guide you through proven strategies to optimize your financial savings. Our experts will provide you with practical tips and insights, such as budgeting techniques, expense tracking, smart investment options, and ways to reduce unnecessary expenses.
+                        .blog-more-infor.mt-32
+                            .infor-above.flex-between 
+                                .tags-cloud-block.flex-item-center.gap-12
+                                    .body3 Tag(s):
+                                    .list-nav.flex-item-center.gap-12
+                                        a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Featured
+                                        a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Interview
+                                        a(href="#!").caption2.pt-8.pb-8.pl-16.pr-16.bg-surface.bora-20.hover-button-black Career
+                                .share-block.flex-item-center.gap-16
+                                    .caption2.pt-8.pb-8.pl-16.pr-16.bora-8.border-line-1px Copy the link
+                                    .social-media.flex-item-center.gap-12
+                                        a(href="http://facebook.com" target="_blank") 
+                                            i.icon-facebook
+                                        a(href="http://linkedin.com" target="_blank") 
+                                            i.icon-in
+                                        a(href="http://twitter.com" target="_blank") 
+                                            i.icon-twitter.fs-14
+                                        a(href="http://instagram.com" target="_blank") 
+                                            i.icon-insta.fs-14
+                                        a(href="http://youtube.com" target="_blank") 
+                                            i.icon-youtube.fs-12
+                            .mt-32.line-x
+                            .infor-below.flex-between.pt-20.pb-20
+                                .prev-block 
+                                    a(href="blog-detail-one.html").text-left
+                                        .text-button-uppercase.text-blue Previous
+                                        .heading7.mt-4 How to choose the right customer 
+                                .line-y
+                                .next-block 
+                                    a(href="blog-detail-two.html").text-right
+                                        .text-button-uppercase.text-blue Next
+                                        .heading7.mt-4 Starting your traveling blog with Vasco
+                            .line-x
+                        .blog-form-contact.mt-32.p-40.bg-surface
+                            .heading7 Leave a Comment
+                            .form-contact-input.mt-24
+                                .row.row-gap-20
+                                    .col-12.col-sm-6 
+                                        .body3.pb-12 Name
+                                        input(type="text" placeholder="Alexander").bg-white.bora-8.p-16.w-100
+                                    .col-12.col-sm-6 
+                                        .body3.pb-12 Email
+                                        input(type="text" placeholder="avitex@mail.com").bg-white.bora-8.p-16.w-100
+                                    .col-12.flex-item-center
+                                        input(type="checkbox", name="check")
+                                        .caption1.pl-8 Save my name, email, and website in this browser for the next time I comment.
+                                    .col-12   
+                                        .body3.pb-12 Comment
+                                        textarea(cols="10", rows="4", placeholder="Write comment...").bg-white.bora-8.w-100.p-16
+                                include mixins/button.pug
+                                .button-block.mt-32
+                                    +button({type:'button', classname:'border-none display-inline-block hover-button-black bg-blue text-white text-button pl-36 pr-36 pt-12 pb-12 bora-48', text:'Submit Comment'})
+    include components/scroll-to-top.pug
+    .pb-100     
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

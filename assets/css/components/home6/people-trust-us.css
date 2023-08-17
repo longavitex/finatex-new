@@ -1,0 +1,23 @@
+.people-trust-us .container > .row > div:last-child .row > div:first-child {
+  padding-right: 0;
+}
+@media (max-width: 991.99px) {
+  .people-trust-us .container > .row > div:first-child {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .people-trust-us .container > .row > div:first-child .bg-img {
+    width: 60%;
+  }
+}
+
+@keyframes earth {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

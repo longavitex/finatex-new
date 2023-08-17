@@ -1,0 +1,69 @@
+.benefit-block.style-one .list-benefit .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.benefit-block.style-one .list-benefit .row > div {
+  padding-right: 0;
+  padding-left: 0;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item {
+  position: relative;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item .text {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+  transition: all ease 0.5s;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item .text .heading5 {
+  position: relative;
+  display: inline-block;
+  margin-left: 0;
+  transition: all ease 0.3s;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item .text .heading5 a {
+  position: relative;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item .text .heading5 a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all ease 0.4s;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item .text .heading5:hover a::before {
+  width: 100%;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item .text a:last-child i {
+  margin-left: 0;
+  transition: all ease 0.3s;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item .text a:last-child:hover i {
+  margin-left: 6px;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background-color: var(--blue);
+  opacity: 0.6;
+  transition: all ease 0.5s;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item:hover::before {
+  height: 100%;
+}
+.benefit-block.style-one .list-benefit .row > div .benefit-item:hover .text {
+  bottom: 140px;
+}
+@media (max-width: 575.99px) {
+  .benefit-block.style-one i.ph-caret-double-right {
+    margin-top: 0 !important;
+  }
+}

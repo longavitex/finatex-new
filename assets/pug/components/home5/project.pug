@@ -1,0 +1,40 @@
+include ../../mixins/button.pug
+
+.project-five.mt-100
+    .container 
+        .heading.text-center 
+            .text-sub-heading2.text-white.pt-8.pb-8.pl-16.pr-16.bg-blue.bora-8.display-inline-block Projects
+            .heading3.text-center.mt-16 Projects that have helped many people <br>become successful thanks to Crypto
+        .list-project.mt-40
+            .project-above
+                .row.flex-between.gap-24
+                    .col-12.col-lg-6.pr-80 
+                        .bg-img.w-100
+                            img(src="assets/images/banner/project-above-home5.png", alt="").w-100
+                    .col-12.col-lg-5
+                        .text-infor 
+                            .heading4 Personal Financial Assessment
+                            .body2.text-secondary.mt-16 Our groundbreaking Project A revolutionizes cryptocurrency trading with its advanced algorithmic trading strategies
+                            .list-service.mt-32
+                                .service-item.flex-item-center 
+                                    i.ph-bold.ph-check.text-blue.fs-24 
+                                    .text-button.ml-12 Debt evaluation and ability to repay
+                                .service-item.flex-item-center.mt-12
+                                    i.ph-bold.ph-check.text-blue.fs-24 
+                                    .text-button.ml-12 Calculation of credit limit
+                                .service-item.flex-item-center.mt-12
+                                    i.ph-bold.ph-check.text-blue.fs-24 
+                                    .text-button.ml-12 Consolidation of personal financial data
+                            .button-block.mt-32
+                                +button({type:'link', href:'service-one.html', classname:'hover-bg-blue text-white bg-on-surface text-button display-inline-flex pt-12 pb-12 pl-28 pr-28 bora-8', text:'Get started', icon: 'ph ph-arrow-right text-white fs-20'})    
+            .project-below.mt-100
+                .row.flex-between.row-gap-40
+                    .col-12.col-lg-5
+                        .text-infor 
+                            .heading4 Budget Planning
+                            .body2.text-secondary.mt-16 We have created a user-friendly and intuitive cryptocurrency exchange platform. It provides a secure and seamless trading experience, empowering users to buy, sell, and manage their digital assets with ease.
+                            .button-block.mt-32
+                                +button({type:'link', href:'service-one.html', classname:'hover-bg-blue text-white bg-on-surface text-button display-inline-flex pt-12 pb-12 pl-28 pr-28 bora-8', text:'Get started', icon: 'ph ph-arrow-right text-white fs-20'})    
+                    .col-12.col-lg-5
+                        .bg-img.w-100
+                            img(src="assets/images/banner/project-below-home5.png", alt="").w-100

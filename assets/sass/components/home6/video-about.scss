@@ -1,0 +1,71 @@
+.video-about-block {
+    .container {
+        .bg-img {
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            background: radial-gradient(63.94% 63.94% at 50.00% -0.00%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(104, 105, 107, 0.20);
+            backdrop-filter: blur(6px);
+
+            img {
+                object-fit: cover;
+            }
+
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all ease 0.4s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--orange);
+                    color: var(--white);
+                }
+            }
+        }
+
+        .row {
+            .heading6 {
+                line-height: 42px;
+            }
+        }
+
+        @media (max-width: 767.99px) {
+            .row {
+                .heading6 {
+                    line-height: 24px;
+                }
+            }
+
+            .bg-img {
+                img {
+                    height: 300px;
+                }
+            }
+        }
+
+        @media (max-width: 575.99px) {
+            .bg-img {
+                img {
+                    height: 240px;
+                }
+
+                i {
+                    font-size: 24px;
+                    padding: 16px;
+                }
+            }
+        }
+
+        @media (max-width: 419.99px) {
+            .bg-img {
+                padding: 24px;
+
+                img {   
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

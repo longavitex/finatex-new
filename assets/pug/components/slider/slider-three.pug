@@ -1,0 +1,22 @@
+include ../../mixins/button.pug
+
+.slider-block.style-three 
+    .slider-main
+        .slider-item
+            .container 
+                .row.flex-between.item-start.gap-32
+                    .left-block.flex-column.row-gap-40.col-7
+                        .heading2.text-white.animate__animated.animate__fadeInUp.animate__delay-0-2s Banking made easy with <br>our online platform
+                        .button-block.animate__animated.animate__fadeInUp.animate__delay-0-5s
+                            +button({type:'link', href:'contact-two.html', classname:'display-inline-flex hover-bg-white bg-gradient text-white text-button pl-28 pr-28 pt-16 pb-16 bora-8', text:'Get Free Consultant', icon: 'ph ph-arrow-right text-white'})
+                    .right-block.flex-column.row-gap-32.col-5.animate__animated.animate__fadeInRight.animate__delay-0-2s
+                        .body2.text-placehover Experience the convenience and simplicity of banking from anywhere with our user-friendly online platform. Manage your accounts, transfer funds, pay bills, and more with just a few clicks.
+                        .count.flex-between.gap-24
+                            .left
+                                .heading3.text-white 1.77k
+                                .body1.text-white.mt-4 Business Problem Solving
+                            .right
+                                .heading3.text-white 246k
+                                .body1.text-white.mt-4 Passive income earners
+                    .slider-img.col-11
+                        img(src="assets/images/slider/graphic-three.png", alt="").w-100.animate__animated.animate__fadeInUp.animate__delay-1s

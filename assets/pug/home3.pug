@@ -1,0 +1,30 @@
+extends base/layout.pug
+block title
+    title Homepage 3 - Online Banking
+block header 
+    include components/header/top-nav/top-nav-three.pug
+    div(class="style-subpage style-home-two style-home-three")
+        include components/header/menu/menu-two.pug
+block content
+    include components/slider/slider-three.pug
+    include components/home3/benefit-above.pug
+    div(class="style-three")
+        include mixins/layoutItem.pug
+        +layoutItem({classname:'', heading:'Registering and Using Online Banking Services', body:'Online banking allows you to manage your finances from anywhere, anytime. You can access your bank account, check your balance, view transactions, and transfer money without having to visit a physical bank.', styleBtn:'bg-gradient hover-button-black text-white', textBtn:'discovery', thumbnail:'assets/images/blog/item2.png'})
+    include components/service/service-three.pug
+    include components/home3/case-studies-three.pug
+    include components/home3/features.pug
+    include components/testimonials/testimonials-three.pug
+    include components/benefit/benefit-three.pug
+    div(class="style-three")
+        include components/home1/our-blog.pug
+    include components/modal-video.pug
+    div(class="style-three")
+        include components/scroll-to-top.pug
+    .pb-100
+block footer 
+    include components/footer/cta/cta-three.pug
+    div(class="style-three")
+        include components/footer/footer.pug
+block script 
+    include base/script.pug

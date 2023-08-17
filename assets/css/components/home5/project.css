@@ -1,0 +1,8 @@
+@media (max-width: 991.99px) {
+  .project-five .heading .heading3 br {
+    display: none;
+  }
+  .project-five .list-project .project-above .row > div:nth-child(1) {
+    padding-right: 15px;
+  }
+}

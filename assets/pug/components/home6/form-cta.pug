@@ -1,0 +1,28 @@
+include ../../mixins/button.pug
+
+.form-cta-block.style-about 
+    .bg-img 
+        img(src="assets/images/cta/bg-cta6.png", alt="")
+    .container.h-100
+        .row.flex-between.h-100
+            .col-12.col-lg-6
+                .heading2.text-white Let’s build<br>future together
+                .caption1.text-line.mt-16 Get in Touch: Together, Let's Shape a Prosperous Future.
+            .col-12.col-lg-6
+                .form-block.bora-16.bg-grey.p-28.flex-columns-between.gap-20
+                    .heading6.text-white Need Help?
+                    .row.row-gap-20
+                        .col-12.col-sm-6 
+                            input(type="text" placeholder="Name").w-100.bg-white.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                        .col-12.col-sm-6 
+                            input(type="text" placeholder="Email").w-100.bg-white.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                        .col-12 
+                            select(name="categories").w-100.bg-white.caption1.pl-12.pt-12.pb-12.bora-8
+                                option(value="Financial Planning") Financial Planning
+                                option(value="Business Planning") Business Planning
+                                option(value="Development Planning") Development Planning
+                            i.ph.ph-caret-down
+                        .col-12 
+                            textarea(name="", cols="10", rows="4" placeholder="Your Message").w-100.bg-white.caption1.pl-16.pr-16.pt-12.pb-12.bora-8
+                    .button-block 
+                        +button({type:'button', classname:'bg-blue text-white text-button pl-36 pr-36 pt-12 pb-12 bora-48', text:'Send Message'})

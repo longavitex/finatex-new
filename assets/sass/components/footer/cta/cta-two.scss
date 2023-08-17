@@ -1,0 +1,19 @@
+.cta-block.style-two {
+    position: relative;
+    height: 120px;
+    width: 100%;
+
+    .bg-cta {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}

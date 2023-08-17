@@ -1,0 +1,73 @@
+.testimonials-three .slick-list,
+.testimonials-four .slick-list {
+  padding: 40px 0;
+}
+@media (max-width: 767.99px) {
+  .testimonials-three .slick-list,
+  .testimonials-four .slick-list {
+    padding: 24px 0;
+  }
+}
+.testimonials-three .slick-dots,
+.testimonials-four .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 16px;
+}
+@media (max-width: 767.99px) {
+  .testimonials-three .slick-dots,
+  .testimonials-four .slick-dots {
+    margin-top: 10px;
+  }
+}
+.testimonials-three .slick-dots li,
+.testimonials-four .slick-dots li {
+  position: relative;
+  border: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.testimonials-three .slick-dots li button,
+.testimonials-four .slick-dots li button {
+  display: none;
+}
+.testimonials-three .slick-dots li::after,
+.testimonials-four .slick-dots li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  transition: 0.5s;
+}
+.testimonials-three .slick-dots li.slick-active,
+.testimonials-four .slick-dots li.slick-active {
+  border: 1px solid var(--on-surface);
+  background-color: #fff;
+}
+.testimonials-three .slick-dots li.slick-active::after,
+.testimonials-four .slick-dots li.slick-active::after {
+  background-color: var(--on-surface);
+  border: 1px solid var(--on-surface);
+}
+
+.testimonials-four .slick-list {
+  padding: 40px 0;
+}
+@media (max-width: 767.99px) {
+  .testimonials-four .slick-list {
+    padding: 24px 0;
+  }
+}
+.testimonials-four .slick-dots {
+  margin-top: 0;
+}

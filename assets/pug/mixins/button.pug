@@ -1,0 +1,16 @@
+mixin button(props = {})
+    -var {type='link', classname = '', href = '#!', text, icon} = props
+    if(icon)
+        if(type=='button')
+            button(class = `button-share ${classname}`).flex-item-center.gap-8
+                i(class=`${icon}`)
+                span!= text
+        if(type=='link')
+            a(href=`${href}` class = `button-share ${classname}`).flex-item-center.gap-8
+                i(class=`${icon}`)
+                span!= text
+    if(!icon)
+        if(type=='button')
+            button(class = `button-share ${classname}`)!= text
+        if(type=='link')
+            a(href=`${href}` class = `button-share ${classname}`)!= text

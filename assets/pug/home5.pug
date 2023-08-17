@@ -1,0 +1,32 @@
+extends base/layout.pug
+block title
+  title Homepage 5 - Cryptocurrency Financial
+block header 
+  div(class="style-home-five")
+    include components/header/top-nav/top-nav-one.pug
+  div(class="style-subpage style-home-five")
+    include components/header/menu/menu-one.pug
+block content
+  include components/slider/slider-five.pug
+  include components/home5/count-number.pug
+  div(class="service-style-five mt-100")
+    .container
+      .heading3.text-center Services that Empower Your <br>Cryptocurrency Trading
+    include components/service/service-five.pug
+  include components/home5/about.pug
+  include components/home5/card.pug
+  div(class="style-five")
+    include components/partner/partner-5col-one.pug
+  include components/home5/project.pug
+  include components/testimonials/testimonials-five.pug
+  div(class="style-five")
+    include components/home1/form-request.pug
+  include components/our-team.pug
+  include components/footer/cta/cta-five.pug
+  include components/scroll-to-top.pug
+  .pb-100
+block footer 
+  div(class="style-five")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

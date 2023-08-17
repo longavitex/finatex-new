@@ -1,0 +1,19 @@
+include ../../mixins/serviceItem.pug
+
+.service-block.mt-100
+    .container 
+        .heading3.text-center Our Services
+        .list-service.row.mt-40.row-gap-32
+            .col-12.col-xl-4.col-lg-6.col-md-6.col-sm-6
+                +serviceItem({classname:'bora-8 p-32 bg-white border-line-1px', href:'service-cryptocurrency-trading.html', icon:'icon-coin-chair text-blue fs-60', title:'Cryptocurrency Trading', desc:'Experience the excitement and potential of the cryptocurrency market with our expert trading services.', arrow:false, number: ' '})
+            .col-12.col-xl-4.col-lg-6.col-md-6.col-sm-6
+                +serviceItem({classname:'bora-8 p-32 bg-white border-line-1px', href:'service-portfolio-management.html', icon:'icon-hand-tick text-blue fs-60', title:'Portfolio Management', desc:'We analyze market trends, manage risks, and optimize your portfolio to maximize returns and achieve your financial goals.', arrow:false, number: ' '})
+            .col-12.col-xl-4.col-lg-6.col-md-6.col-sm-6
+                +serviceItem({classname:'bora-8 p-32 bg-white border-line-1px', href:'service-investment-advice.html', icon:'icon-hand-house text-blue fs-60', title:'Investment Advice', desc:"Our team of experienced advisors will guide you in making informed investment decisions, whether you're a beginner or an experienced trader.", arrow:false, number: ' '})
+            .col-12.col-xl-4.col-lg-6.col-md-6.col-sm-6
+                +serviceItem({classname:'bora-8 p-32 bg-white border-line-1px', icon:'icon-gear-warning text-blue fs-60', title:'Risk Management', desc:'We employ industry-leading tools and techniques to protect your investments and minimize potential losses.', arrow:false, number: ' '})
+            .col-12.col-xl-4.col-lg-6.col-md-6.col-sm-6
+                +serviceItem({classname:'bora-8 p-32 bg-white border-line-1px', href:'service-research-analysis.html', icon:'icon-text-search text-blue fs-60', title:'Research and Analysis', desc:'We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions', arrow:false, number: ' '})
+            .col-12.col-xl-4.col-lg-6.col-md-6.col-sm-6
+                +serviceItem({classname:'bora-8 p-32 bg-white border-line-1px', href:'service-education-resources.html', icon:'icon-education text-blue fs-52', title:'Education and Resources', desc:'Expand your knowledge and skills in cryptocurrency trading through our educational resources.', arrow:false, number: ' '})
+    

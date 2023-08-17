@@ -1,0 +1,15 @@
+mixin blogItem(props = {})
+    -var {classname = '', dataName='', href = '#!', img, cate, title, author, time} = props
+    div(class=`blog-item ${classname}` data-name=`${dataName}`)
+        a(href=`${href}`).blog-item-main
+            .bg-img.w-100.overflow-hidden.mb-minus-1
+                img(src=`${img}` alt=`${title}`).w-100.h-100.display-block
+            .infor.bg-white.p-24
+                .caption2.pt-4.pb-4.pl-12.pr-12.bg-surface.bora-40.display-inline-block!= cate
+                .heading6.mt-8!= title
+                .date.flex-item-center.gap-16.mt-8
+                    .author.caption2.text-secondary by 
+                        span.text-on-surface!= author 
+                    .item-date.flex-item-center
+                        i.ph-bold.ph-calendar-blank
+                        span.ml-4.caption2!= time

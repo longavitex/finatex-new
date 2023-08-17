@@ -1,0 +1,107 @@
+// Case Studies Detail: Start
+// Project Information: Start
+.project-infor {
+    .container {
+        .row {
+            >div:first-child {
+                @media (max-width: 575.99px) {
+                    .count-number {
+                        .item {
+                            .body3 {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Project Information: End
+
+
+// How we did: Start
+.how-we-did {
+    .container {
+        .row {
+            >div:first-child {
+                .bg-img {
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+                        color: var(--critical);
+                        transition: all ease 0.4s;
+                        padding: calc((80px - 28px) / 2);
+
+                        &:hover {
+                            background-color: rgb(252, 63, 63);
+                            color: var(--white);
+                        }
+                    }
+                }
+
+                @media (max-width: 480.99px) {
+                    .bg-img {
+                        i {
+                            font-size: 20px;
+                            padding: calc((50px - 20px) / 2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991.99px) {
+        .desc {
+            margin-left: 0;
+
+            .mt-40 {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+// How we did: End
+
+
+// Layout Final outcome of this project(Shared layout Registering and Using Online Banking Services - home3): Start
+.layout-item {
+    .col-12 {
+        &:first-child {
+            .button-block {
+                a {
+                    position: relative;
+
+                    span {
+                        padding-left: 28px;
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991.99px) {
+        .col-12 {
+            .bg-img {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+// Layout Final outcome of this project(Shared layout Registering and Using Online Banking Services - home3): End
+// Case Studies Detail: End

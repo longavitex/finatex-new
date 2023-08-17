@@ -1,0 +1,42 @@
+.partner-five-col {
+  overflow: hidden;
+}
+.partner-five-col .list {
+  display: flex;
+  width: 3120px;
+  overflow: hidden;
+  animation: scroll 30s linear infinite;
+}
+.partner-five-col .list .bg-img {
+  width: 140px !important;
+  margin: 0 60px;
+}
+
+.style-two .partner-five-col {
+  background-color: #173363;
+  margin-top: 0;
+}
+
+.style-four .partner-five-col {
+  background-color: #15143B;
+  margin-top: 0;
+}
+
+.style-five .partner-five-col {
+  background-color: var(--on-surface);
+  margin-top: 60px;
+}
+
+.style-six .partner-five-col {
+  background-color: var(--on-surface);
+  margin-top: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1560px);
+  }
+}

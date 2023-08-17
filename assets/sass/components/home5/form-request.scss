@@ -1,0 +1,53 @@
+.style-five {
+    .form-request {
+        background-color: var(--surface);
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+
+
+        .container {
+            .heading {
+                display: block;
+
+                .body3 {
+                    margin-top: 24px;
+                }
+            }
+
+            .form {
+                margin-top: 24px;
+                background-color: #fff;
+                padding: 16px;
+                border-radius: 16px;
+
+                input,
+                select {
+                    background-color: #fff;
+                    border: 1px solid var(--line);
+
+                    &:focus {
+                        border: 1px solid var(--blue);
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 767.99px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+
+            .container {
+                .heading {
+                    .body3 {
+                        margin-top: 12px;
+                    }
+                }
+
+                .form {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}

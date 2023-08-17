@@ -1,0 +1,56 @@
+extends base/layout.pug
+block title
+  title Blog Grid
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-blog-grid")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/blog.png', nav:'Home', nav1:'Blog', heading:'Blog', subHeading:"Discover valuable insights and expert advice on budgeting, investing, and retirement planning in our Financial Blogs section."})
+    .blog-list.mt-100
+        .container 
+            .row.row-gap-32
+                include mixins/blogItem.pug
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item1.png', cate:'Makerting', title:'Starting your traveling blog with Vasco', author:'Bangta', time:'1 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item2.png', cate:'Design', title:'How to design your site footer like we did', author:'Avitex', time:'1 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item3.png', cate:'Development', title:'How to build a loyal community online and offline?', author:'MavelCorp', time:'2 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item4.png', cate:'Makerting', title:'How a visual artist redefines success in graphic design?', author:'Avitex', time:'2 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item5.png', cate:'Business', title:'Helping a local business reinvent itself', author:'BinTech', time:'2 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item6.png', cate:'Makerting', title:'Travelling as a way of self-discovery and progress', author:'Bangta', time:'3 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item7.png', cate:'Development', title:'Where to grow your business as a photographer', author:'MavelCorp', time:'4 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item8.png', cate:'Business', title:'Start a blog to reach your creative peak', author:'Bangta', time:'5 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter', dataName:'tab-one', href: 'blog-detail-one.html', img:'assets/images/blog/item9.png', cate:'Design', title:'How to choose the right customer ', author:'BinTech', time:'5 days ago'})
+                
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item11.png', cate:'Makerting', title:'How to choose the right customer ', author:'MavelCorp', time:'5 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item12.png', cate:'Design', title:'Start a blog to reach your creative peak', author:'Bangta', time:'5 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item13.png', cate:'Development', title:'Where to grow your business as a photographer', author:'Avitex', time:'6 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item9.png', cate:'Makerting', title:'Starting your traveling blog with Vasco', author:'BinTech', time:'6 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item2.png', cate:'Business', title:'Travelling as a way of self-discovery and progress', author:'MavelCorp', time:'6 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item1.png', cate:'Makerting', title:'How to build a loyal community online and offline?', author:'Bangta', time:'7 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item6.png', cate:'Development', title:'Helping a local business reinvent itself', author:'Avitex', time:'7 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item5.png', cate:'Business', title:'How to design your site footer like we did', author:'BinTech', time:'7 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-two', href: 'blog-detail-one.html', img:'assets/images/blog/item10.png', cate:'Design', title:'How a visual artist redefines success in graphic design?', author:'BinTech', time:'9 days ago'})
+                
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item5.png', cate:'Makerting', title:'Travelling as a way of self-discovery and progress', author:'BinTech', time:'11 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item8.png', cate:'Design', title:'Starting your traveling blog with Vasco', author:'MavelCorp', time:'12 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item7.png', cate:'Development', title:'Where to grow your business as a photographer', author:'Bangta', time:'12 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item12.png', cate:'Makerting', title:'How to choose the right customer ', author:'Avitex', time:'12 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item10.png', cate:'Business', title:'Start a blog to reach your creative peak', author:'BinTech', time:'13 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item1.png', cate:'Makerting', title:'How to design your site footer like we did', author:'MavelCorp', time:'13 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item3.png', cate:'Development', title:'How to build a loyal community online and offline?', author:'BinTech', time:'14 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item2.png', cate:'Business', title:'Helping a local business reinvent itself', author:'Avitex', time:'15 days ago'})
+                +blogItem({classname: 'col-12 col-xl-4 col-md-6 item-filter hide', dataName:'tab-three', href: 'blog-detail-one.html', img:'assets/images/blog/item4.png', cate:'Design', title:'How a visual artist redefines success in graphic design?', author:'Bangta', time:'18 days ago'})
+                
+                .list-nav.flex-center.gap-8.mt-40.col-12
+                    .nav-item.bora-4.bg-surface.text-button.w-40.h-40.flex-center.border-line-1px&attributes({"data-name":"tab-one"}).active 1
+                    .nav-item.bora-4.bg-surface.text-button.w-40.h-40.flex-center.border-line-1px&attributes({"data-name":"tab-two"}) 2
+                    .nav-item.bora-4.bg-surface.text-button.w-40.h-40.flex-center.border-line-1px&attributes({"data-name":"tab-three"}) 3
+    include components/scroll-to-top.pug
+    .pb-100     
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

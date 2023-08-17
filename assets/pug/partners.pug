@@ -1,0 +1,84 @@
+extends base/layout.pug
+block title
+  title Partners
+block header 
+    include components/header/top-nav/top-nav-one.pug
+    div(class="style-subpage style-partners")
+        include components/header/menu/menu-one.pug
+block content
+    include mixins/sliderSub.pug
+    +sliderSub({classname: '', img:'assets/images/banner/contact.png', nav:'Home', nav1:'Our Partners', heading:'Our Partners', subHeading:"Discover our esteemed partners, who collaborate with us to bring you exceptional products and services, elevating your experience to new heights."})
+    .list-partner-block.mt-100
+        .container
+            .heading3.text-center We are helping over 30k+ <br>customers for growing business
+            .list-partner.mt-24
+                .list-item.flex-columns-between.row-gap-40.pt-60
+                    .item-main.flex-between
+                        .bg-img 
+                            img(src="assets/images/partner/1.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/2.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/3.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/4.svg", alt="1")
+                    .border-line
+                    .item-main.flex-between
+                        .bg-img 
+                            img(src="assets/images/partner/5.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/6.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/1.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/8.svg", alt="1")
+                    .border-line
+                    .item-main.flex-between
+                        .bg-img 
+                            img(src="assets/images/partner/9.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/3.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/8.svg", alt="1")
+                        .bg-img 
+                            img(src="assets/images/partner/7.svg", alt="1")
+                
+            .more-list.flex-column.row-gap-32.mt-100
+                .row.row-gap-32
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/1.svg", alt="1")
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/2.svg", alt="1")
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/3.svg", alt="1")
+
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/4.svg", alt="1")
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/5.svg", alt="1")
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/6.svg", alt="1")
+
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/7.svg", alt="1")
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/8.svg", alt="1")
+                    .col-12.col-lg-4.col-sm-6
+                        .bg-img.w-100.flex-center.bora-16.border-line-1px
+                            img(src="assets/images/partner/9.svg", alt="1")
+    include components/scroll-to-top.pug
+    .pb-100     
+block footer 
+  include components/footer/cta/cta-two.pug
+  div(class="style-one")
+    include components/footer/footer.pug
+block script 
+    include base/script.pug

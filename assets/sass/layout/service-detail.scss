@@ -1,0 +1,95 @@
+.content-detail-block {
+    .container {
+        >.row {
+            >div {
+                &:last-child {
+                    .list-nav {
+                        .nav-item {
+                            &.active, &:hover {
+                                background-color: var(--surface);
+
+                                .text-secondary {
+                                    color: var(--on-surface);
+                                }
+
+                                i {
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                    }
+
+                    .ads-block {
+                        margin-top: 40px;
+                        width: 100%;
+                        position: relative;
+
+                        .bg-img {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                                z-index: -1;
+                            }
+                        }
+
+                        .text {
+                            position: absolute;
+                            left: 32px;
+                            top: 36px;
+                            bottom: 36px;
+
+                        }
+                    }
+
+                    @media (max-width: 1169.99px) {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        .more-infor,
+                        .ads-block {
+                            width: 48%;
+                        }
+
+                        .ads-block {
+                            margin-top: 0;
+                            height: 100%;
+
+                            .bg-img,
+                            img {
+                                height: 100%;
+                            }
+
+                            .text {
+                                top: 25%;
+                                bottom: 25%;
+                            }
+                        }
+                    }
+
+                    @media (max-width: 767.99px) {
+                        flex-direction: column;
+                        row-gap: 32px;
+
+                        .more-infor,
+                        .ads-block {
+                            width: 100%;
+                        }
+                    }
+
+                    @media (max-width: 575.99px) {
+                        .ads-block {
+                            .text {
+                                top: 20%;
+                                bottom: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
