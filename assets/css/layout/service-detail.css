@@ -64,3 +64,8 @@
     bottom: 20%;
   }
 }
+@media (max-width: 1169.99px) {
+  .content-detail-block .col-xl-9 .content-para {
+    padding-right: 0;
+  }
+}

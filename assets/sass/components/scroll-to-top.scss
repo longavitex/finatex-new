@@ -1,3 +1,4 @@
+// Scroll To Top Button: Start
 .scroll-to-top-btn {
     background-color: var(--blue);
     width: 50px;
@@ -31,6 +32,7 @@
     visibility: visible;
 }
 
+// Change background Color Scroll To Top Button Home3
 .style-three {
     .scroll-to-top-btn {
         background-color: var(--gradient);
@@ -41,6 +43,7 @@
     }
 }
 
+// Change background Color Scroll To Top Button Home4
 .style-four {
     .scroll-to-top-btn {
         background-color: var(--success);
@@ -51,6 +54,7 @@
     }
 }
 
+// Change background Color Scroll To Top Button Home6
 .style-six {
     .scroll-to-top-btn {
         background-color: var(--orange);
@@ -64,3 +68,5 @@
         }
     }
 }
+
+// Scroll To Top Button: End

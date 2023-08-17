@@ -1,3 +1,14 @@
+
+/* 
+
+The sections Header(Header menu, Top nav), Footer, Slider, Services, News(Blogs), 
+Testimonials will be CSS in the same area. The individual sections will have separate 
+CSS in each Home area. You can find them by the syntax (Section + Home1,2,3,4,5,6). 
+If you want to find the CSS position of a certain section, look at its HTML file 
+structure first, then search by the section's parent class name (Press Crtl + F to search).
+
+*/
+
 :root {
   --on-surface: #121212;
   --secondary: #64666C;
@@ -4299,12 +4310,6 @@ template {
 }
 
 @media (max-width: 1169.99px) {
-  .content-detail-block .col-xl-9 .content-para {
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 1169.99px) {
   .service-block-two .col-xl-8 .pl-40 {
     padding-left: 0;
   }
@@ -6244,6 +6249,11 @@ template {
   .content-detail-block .container > .row > div:last-child .ads-block .text {
     top: 20%;
     bottom: 20%;
+  }
+}
+@media (max-width: 1169.99px) {
+  .content-detail-block .col-xl-9 .content-para {
+    padding-right: 0;
   }
 }
 

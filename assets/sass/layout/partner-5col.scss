@@ -1,3 +1,4 @@
+// Shared section partners: Start
 .partner-five-col {
     overflow: hidden;
 
@@ -14,6 +15,7 @@
     }
 }
 
+// Change bg color section partners: Home2
 .style-two {
     .partner-five-col {
         background-color: #173363;
@@ -21,6 +23,7 @@
     }
 }
 
+// Change bg color section partners: Home4
 .style-four {
     .partner-five-col {
         background-color: #15143B;
@@ -28,6 +31,7 @@
     }
 }
 
+// Change bg color section partners: Home5
 .style-five {
     .partner-five-col {
         background-color: var(--on-surface);
@@ -35,6 +39,7 @@
     }
 }
 
+// Change bg color section partners: Home6
 .style-six {
     .partner-five-col {
         background-color: var(--on-surface);
@@ -42,6 +47,7 @@
     }
 }
 
+// scroll auto
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -51,3 +57,4 @@
         transform: translateX(-260px * 6);
     }
 }
+// Share section Partners: End

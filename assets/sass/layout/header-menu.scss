@@ -1,3 +1,4 @@
+// Responsive Header: Start
 #header {
     display: unset;
 }
@@ -111,7 +112,10 @@
         }
     }
 }
+// Responsive Header: End
 
+
+// Mobile Menu Humburger: Start
 .header-menu {
     #menu-mobile-block {
         position: relative;
@@ -152,3 +156,4 @@
         }
     }
 }
+// Mobile Menu Humburger: End

@@ -1,3 +1,4 @@
+// Service Detail Page: Start
 .content-detail-block {
     .container {
         >.row {
@@ -5,7 +6,9 @@
                 &:last-child {
                     .list-nav {
                         .nav-item {
-                            &.active, &:hover {
+
+                            &.active,
+                            &:hover {
                                 background-color: var(--surface);
 
                                 .text-secondary {
@@ -92,4 +95,12 @@
     }
 
 
+    @media (max-width: 1169.99px) {
+        .col-xl-9 {
+            .content-para {
+                padding-right: 0;
+            }
+        }
+    }
 }
+// Service Detail Page: End

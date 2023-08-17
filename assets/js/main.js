@@ -378,9 +378,7 @@ $(".our-team-block .list-member").slick({
   touchThreshold: 100,
   swipe: true,
   swipeToSlide: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  speed: 500,
+  autoplay: false,
   pauseOnFocus: false,
   pauseOnHover: false,
   pauseOnDotsHover: false,
@@ -541,7 +539,6 @@ if (listNavItems) {
 
 // open answer faqs
 const questionItem = document.querySelectorAll('.question-item')
-// const listQuestion = document.querySelectorAll('.list-question')
 
 if (questionItem) {
   questionItem.forEach((item, index) => {
