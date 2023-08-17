@@ -1,3 +1,6 @@
+/*
+*** Service item main: Start
+*/
 .service-item .service-item-main i.ph-caret-right {
   margin-top: 2px;
 }
@@ -37,6 +40,12 @@
   opacity: 1;
 }
 
+/*
+*** Service item main: End
+*/
+/* 
+*** List Benefit Home3: Start
+*/
 .list-benefit-three {
   margin-top: 44px;
 }
@@ -69,10 +78,22 @@
   color: var(--gradient);
 }
 
+/* 
+*** List Benefit Home3: End
+*/
+/* 
+Change icon color section Services Home3: Start
+*/
 .service-block.style-about-two.style-three .list-service .service-item:hover .heading6 {
   color: var(--gradient);
 }
 
+/* 
+Change icon color section Services Home3: End
+*/
+/* 
+*** Section Services About Us - Style 2: Start
+*/
 .service-block.style-about-two .list-service .service-item:hover .heading6 {
   color: var(--blue);
 }
@@ -106,6 +127,9 @@
   }
 }
 
+/* 
+*** Section Services About Us - Style 2: End
+*/
 .service-tab-style .list-nav .nav-item {
   transition: all ease 0.4s;
 }
@@ -116,12 +140,24 @@
   border-radius: 99px;
 }
 
+/*
+*** Section Services - Style 2: End
+*/
+/*
+*** Section Services Home2: Start
+*/
 @media (max-width: 1169.99px) {
   .service-block-two .col-xl-8 .pl-40 {
     padding-left: 0;
   }
 }
 
+/*
+*** Section Services Home2: End
+*/
+/*
+*** Section Services Home4: Start
+*/
 .service-style-four .service-block .list-service > div .service-item:hover .desc .heading7 {
   color: var(--success);
 }
@@ -137,6 +173,12 @@
   margin-left: 4px;
 }
 
+/*
+*** Section Services Home4: End
+*/
+/*
+*** Section Services Home5: Start
+*/
 .service-style-five .mt-100 {
   margin-top: 40px;
 }
@@ -146,6 +188,12 @@
   }
 }
 
+/*
+*** Section Services Home5: End
+*/
+/*
+*** Section Services Home6: Start
+*/
 .service-block.style-six .list-service {
   row-gap: 80px;
   margin-top: 80px;
@@ -203,3 +251,7 @@
     top: -30px;
   }
 }
+
+/*
+*** Section Services Home6: End
+*/

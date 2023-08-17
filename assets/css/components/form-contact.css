@@ -1,3 +1,20 @@
+/*
+Contact Us Page: Start
+*/
+/*
+Contact Us - Style 1: Start
+*/
+.form-contact {
+  /*
+      Contact Us - Style 1: End
+  */
+  /*
+  Contact Us - Style 2: Start
+  */
+  /*
+      Contact Us - Style 2: End
+  */
+}
 .form-contact .row .list-social .item:nth-child(4) i, .form-contact .row .list-social .item:last-child i {
   margin-left: 2px;
 }
@@ -82,3 +99,7 @@
     padding-left: 15px;
   }
 }
+
+/*
+Contact Us Page: End
+*/

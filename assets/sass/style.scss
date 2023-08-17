@@ -1,3 +1,17 @@
+/**/
+/**/
+/*
+The sections Header(Header menu, Top nav), Footer, Slider, Services,
+News(Blogs), Testimonials will be CSS in the same area. The individual 
+sections will have separate CSS in each Home area. You can find them by 
+the syntax (Section + Home1,2,3,4,5,6). If you want to find the CSS position 
+of a certain section, look at its HTML file structure first, then search by 
+the section's parent class name (Press Crtl + F to search).
+*/
+/**/
+/**/
+
+/* Main color */
 :root {
     --on-surface: #121212;
     --secondary: #64666C;
@@ -20,14 +34,70 @@
     --yellow: #F2C94C;
 }
 
-
+/* 
+*
+*** Reset CSS: Start
+*
+*/
 @import "base/reset.scss";
+/* 
+*
+*** Reset CSS: End
+*
+*/
+/**/
+/**/
+/* 
+*
+Container: Start
+*
+*/
 @import "base/container.scss";
+/* 
+*
+*** Container: End
+*
+*/
+/**/
+/**/
+/* 
+*
+*** Main class used in Finatex: Start
+*
+*/
 @import "base/global.scss";
-
-@import "components/header/menu/header-menu.scss";
+/* 
+*
+*** Main class used in Finatex: End
+*
+*/
+/**/
+/**/
 @import "components/header/top-nav/top-nav.scss";
+@import "layout/top-nav.scss";
+@import "components/header/menu/header-menu.scss";
+@import "layout/header-menu.scss";
 @import "components/slider/slider-home.scss";
+@import "components/slider/slider-subpage.scss";
+@import "components/service-block.scss";
+@import "layout/service-detail.scss";
+@import "components/case-studies/case-style.scss";
+@import "components/case-studies/case-detail.scss";
+
+@import "components/blog/blog-list.scss";
+@import "components/blog/blog-item.scss";
+@import "components/blog/blog-detail.scss";
+
+@import "components/testimonials/testimonials-two.scss";
+@import "components/testimonials/testimonials-three.scss";
+@import "components/testimonials/testimonials-six.scss";
+
+@import "components/form-contact.scss";
+@import "components/questionFAQ.scss";
+@import "components/list-pricing.scss";
+@import "components/our-team.scss";
+
+
 @import "components/home1/payment-gateway.scss";
 @import "components/home1/benefit.scss";
 @import "components/home1/faqs.scss";
@@ -56,24 +126,14 @@
 @import "components/home6/pricing.scss";
 @import "components/home6/how-we-work.scss";
 
-@import "components/slider/slider-subpage.scss";
-@import "components/service-block.scss";
 
-@import "components/case-studies/case-style.scss";
-@import "components/case-studies/case-detail.scss";
-
-@import "components/blog/blog-list.scss";
-@import "components/blog/blog-item.scss";
-@import "components/blog/blog-detail.scss";
-
-@import "components/testimonials/testimonials-two.scss";
-@import "components/testimonials/testimonials-three.scss";
-@import "components/testimonials/testimonials-six.scss";
-@import "components/form-contact.scss";
-@import "components/questionFAQ.scss";
-@import "components/list-pricing.scss";
-@import "components/our-team.scss";
+@import "layout/modal-video.scss";
+@import "layout/filter-item.scss";
+@import "layout/layout-item.scss";
+@import "layout/list-partner.scss";
+@import "layout/partner-5col.scss";
 @import "components/scroll-to-top.scss";
+
 
 @import "components/form-cta/form-cta-about.scss";
 @import "components/footer/cta/cta-two.scss";
@@ -81,15 +141,6 @@
 @import "components/footer/cta/cta-four.scss";
 @import "components/footer/cta/cta-five.scss";
 @import "components/footer/footer.scss";
-
-@import "layout/modal-video.scss";
-@import "layout/filter-item.scss";
-@import "layout/header-menu.scss";
-@import "layout/top-nav.scss";
 @import "layout/footer.scss";
-@import "layout/service-detail.scss";
-@import "layout/layout-item.scss";
-@import "layout/list-partner.scss";
-@import "layout/partner-5col.scss";
 
 @import "layout/font-reduction.scss";

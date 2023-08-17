@@ -1,3 +1,6 @@
+/*
+Header top nav main Home1: Start
+*/
 .top-nav.style-one .list-social .item i {
   margin-left: 2px;
 }
@@ -11,6 +14,12 @@
   color: var(--blue);
 }
 
+/*
+Header top nav main Home1: End
+*/
+/*
+Header top nav main Home2: Start
+*/
 .list-social.style-two .item:hover {
   background-color: var(--on-surface);
 }
@@ -18,6 +27,12 @@
   color: var(--white);
 }
 
+/*
+Header top nav main Home2: End
+*/
+/*
+Header top nav main Home3: Start
+*/
 .style-home-three .header-menu .menu-right-block .list-social .item:hover {
   background-color: #fff;
 }
@@ -35,6 +50,12 @@
   margin-left: 2px;
 }
 
+/*
+Header top nav main Home3: End
+*/
+/*
+Header top nav main Home4: Start
+*/
 .top-nav.style-four .right-block .list-social .item:hover i::before {
   color: var(--success);
 }
@@ -42,6 +63,12 @@
   margin-left: 1px;
 }
 
+/*
+Header top nav main Home4: End
+*/
+/*
+Header top nav main Home5: Start
+*/
 .style-home-five .top-nav.style-one {
   background-color: var(--on-surface);
 }
@@ -49,6 +76,12 @@
   background-color: var(--on-surface);
 }
 
+/*
+Header top nav main Home5: End
+*/
+/*
+Header top nav main Home6: Start
+*/
 .style-home-six .top-nav.style-one {
   background-color: var(--on-surface);
 }
@@ -67,3 +100,7 @@
 .style-home-six .top-nav.style-one select {
   background-color: var(--on-surface);
 }
+
+/*
+Header top nav main Home6: End
+*/

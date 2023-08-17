@@ -1,3 +1,6 @@
+/*
+*** Service item main: Start
+*/
 .service-item {
     .service-item-main {
         i.ph-caret-right {
@@ -6,7 +9,6 @@
     }
 }
 
-// List services main: Start
 .service-block {
     .service-item {
         position: relative;
@@ -65,10 +67,14 @@
         }
     }
 }
-// List services main: End
+/*
+*** Service item main: End
+*/
 
 
-// List Benefit Home3: Start
+/* 
+*** List Benefit Home3: Start
+*/
 .list-benefit-three {
     margin-top: 44px;
 
@@ -116,10 +122,14 @@
         }
     }
 }
-// List Benefit Home3: End
+/* 
+*** List Benefit Home3: End
+*/
 
 
-// Change icon color section Services Home3: Start
+/* 
+Change icon color section Services Home3: Start
+*/
 .service-block.style-about-two.style-three {
     .list-service {
         .service-item {
@@ -132,10 +142,14 @@
 
     }
 }
-// Change icon color section Services Home3: End
+/* 
+Change icon color section Services Home3: End
+*/
 
 
-// Section Services About Us - Style 2: Start
+/* 
+*** Section Services About Us - Style 2: Start
+*/
 .service-block.style-about-two {
     .list-service {
         .service-item {
@@ -185,10 +199,12 @@
         }
     }
 }
-// Section Services About Us - Style 2: End
+/* 
+*** Section Services About Us - Style 2: End
+*/
 
 
-// Section Services - Style 2: Start
+
 .service-tab-style {
     .list-nav {
         .nav-item {
@@ -203,10 +219,14 @@
         }
     }
 }
-// Section Services - Style 2: End
+/*
+*** Section Services - Style 2: End
+*/
 
 
-// Section Services Home2: Start
+/*
+*** Section Services Home2: Start
+*/
 .service-block-two {
     @media (max-width: 1169.99px) {
         .col-xl-8 {
@@ -216,10 +236,14 @@
         }
     }
 }
-// Section Services Home2: End
+/*
+*** Section Services Home2: End
+*/
 
 
-// Section Services Home4: Start
+/*
+*** Section Services Home4: Start
+*/
 .service-style-four {
     .service-block {
         .list-service {
@@ -261,10 +285,14 @@
         }
     }
 }
-// Section Services Home4: End
+/*
+*** Section Services Home4: End
+*/
 
 
-// Section Services Home5: Start
+/*
+*** Section Services Home5: Start
+*/ 
 .service-style-five {
     .mt-100 {
         margin-top: 40px;
@@ -278,10 +306,14 @@
         }
     }
 }
-// Section Services Home5: End
+/*
+*** Section Services Home5: End
+*/ 
 
 
-// Section Services Home6: Start
+/*
+*** Section Services Home6: Start
+*/ 
 .service-block.style-six {
     .list-service {
         row-gap: 80px;
@@ -349,4 +381,6 @@
         }
     }
 }
-// Section Services Home6: End
+/*
+*** Section Services Home6: End
+*/ 

@@ -1,3 +1,6 @@
+/*
+Section counter (count number) Home2: Start
+*/
 .style-two .count-number-block .container {
   border-top: 1px solid var(--line);
   padding-top: 40px;
@@ -19,3 +22,6 @@
     line-height: 44px;
   }
 }
+/*
+Section counter (count number) Home2: End
+*/

@@ -1,3 +1,6 @@
+/*
+Section Our Pricing Home4: Start
+*/
 .pricing-block.style-four .pricing-main .heading .switch.enable .bg-placehover {
   background-color: var(--success);
 }
@@ -30,3 +33,7 @@
   display: block;
   animation: showList ease-in-out 0.7s;
 }
+
+/*
+Section Our Pricing Home4: End
+*/

@@ -1,4 +1,6 @@
-/* Blog Detail - Style 1: Start */
+/* 
+*** Blog Detail - Style 1: Start 
+*/
 .blog-list.style-detail li {
   list-style: disc;
 }
@@ -95,8 +97,12 @@
   }
 }
 
-/* Blog Detail - Style 1: End */
-/*Blog Detail - Style 2: Start*/
+/* 
+*** Blog Detail - Style 1: End 
+*/
+/*
+*** Blog Detail - Style 2: Start
+*/
 .blog-detail-two .slider-sub .container .text-nav {
   width: 100%;
 }
@@ -109,4 +115,6 @@
   }
 }
 
-/*Blog Detail - Style 2: End*/
+/*
+*** Blog Detail - Style 2: End
+*/

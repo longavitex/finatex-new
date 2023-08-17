@@ -1,3 +1,6 @@
+/*
+Section Testimonial Home2: Start
+*/
 .testimonials-block.style-two .list-comment .comment-item .content {
   font-size: 24px;
   font-weight: 500;
@@ -61,3 +64,7 @@
   background-color: var(--on-surface);
   border: 1px solid var(--on-surface);
 }
+
+/*
+Section Testimonial Home2: End
+*/

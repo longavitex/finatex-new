@@ -1,3 +1,6 @@
+/*
+Section Testimonial Home3, Home4: Start
+*/
 .testimonials-three .slick-list,
 .testimonials-four .slick-list {
   padding: 40px 0;
@@ -71,3 +74,7 @@
 .testimonials-four .slick-dots {
   margin-top: 0;
 }
+
+/*
+Section Testimonial Home3, Home4: End
+*/

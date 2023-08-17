@@ -1,3 +1,6 @@
+/*
+Header menu main: Start
+*/
 .header-menu {
   box-shadow: 0px 5px 25px rgba(58, 64, 67, 0.1);
   width: 100%;
@@ -94,6 +97,12 @@
   width: 10px;
 }
 
+/*
+Header menu main: End
+*/
+/*
+Header menu Home2: Start
+*/
 .style-home-two {
   display: unset;
 }
@@ -112,6 +121,12 @@
   width: 10px !important;
 }
 
+/*
+Header menu Home2: End
+*/
+/*
+Header menu Home3: Start
+*/
 .style-home-three .header-menu {
   background-color: var(--dark-purple);
   color: var(--white);
@@ -181,6 +196,12 @@
   background-color: var(--gradient) !important;
 }
 
+/*
+Header menu Home3: End
+*/
+/*
+Header menu Home4: Start
+*/
 .style-home-four {
   display: unset;
 }
@@ -225,6 +246,12 @@
   background-color: var(--success) !important;
 }
 
+/*
+Header menu Home4: End
+*/
+/*
+Header menu Home5: Start
+*/
 .style-home-five {
   display: unset;
 }
@@ -246,6 +273,12 @@
   color: var(--on-surface);
 }
 
+/*
+Header menu Home5: End
+*/
+/*
+Header menu Home6: Start
+*/
 .style-home-six {
   display: unset;
 }
@@ -371,6 +404,12 @@
   }
 }
 
+/*
+ Header menu Home6: End
+*/
+/*
+Change active link of header menu subpages: Start
+*/
 .style-about-one .about .sub-nav li:first-child a {
   color: var(--blue);
   padding-left: 20px;
@@ -655,3 +694,7 @@
 .style-blog-detail-two .blog .sub-nav-mobile li:nth-child(7) a::before {
   width: 10px !important;
 }
+
+/*
+Change active link of header menu subpages: End
+*/

@@ -1,3 +1,6 @@
+/*
+Form contact main: Start
+*/
 .form-cta-block {
   position: relative;
   height: 514px;
@@ -86,6 +89,12 @@
     height: 620px;
   }
 }
+/*
+Form contact main: End
+*/
+/*
+Form contact Home6: Start
+*/
 .style-six .form-cta-block {
   position: relative;
 }
@@ -140,3 +149,7 @@
     height: 600px;
   }
 }
+
+/*
+Form contact Home6: End
+*/

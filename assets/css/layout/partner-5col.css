@@ -1,3 +1,6 @@
+/*
+Shared section partners: Start
+*/
 .partner-five-col {
   overflow: hidden;
 }
@@ -12,26 +15,41 @@
   margin: 0 60px;
 }
 
+/*
+Change bg color section partners: Home2
+*/
 .style-two .partner-five-col {
   background-color: #173363;
   margin-top: 0;
 }
 
+/*
+Change bg color section partners: Home4
+*/
 .style-four .partner-five-col {
   background-color: #15143B;
   margin-top: 0;
 }
 
+/*
+Change bg color section partners: Home5
+*/
 .style-five .partner-five-col {
   background-color: var(--on-surface);
   margin-top: 60px;
 }
 
+/*
+Change bg color section partners: Home6
+*/
 .style-six .partner-five-col {
   background-color: var(--on-surface);
   margin-top: 0;
 }
 
+/*
+scroll auto
+*/
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -40,3 +58,6 @@
     transform: translateX(-1560px);
   }
 }
+/*
+Share section Partners: End
+*/

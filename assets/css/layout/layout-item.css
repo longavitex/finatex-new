@@ -1,3 +1,6 @@
+/*
+Shared Layout some sections: Start
+*/
 .layout-item .row .bg-video {
   width: 100%;
   position: relative;
@@ -39,3 +42,6 @@
     padding: 18px;
   }
 }
+/*
+Shared Layout some sections: End
+*/

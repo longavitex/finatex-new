@@ -1,3 +1,6 @@
+/*
+Responsive Header: Start
+*/
 #header {
   display: unset;
 }
@@ -65,6 +68,12 @@
     display: none;
   }
 }
+/*
+Responsive Header: End
+*/
+/*
+Mobile Menu Humburger: Start
+*/
 .header-menu #menu-mobile-block {
   position: relative;
 }
@@ -94,3 +103,7 @@
 .header-menu #menu-mobile-block.open .menu-mobile-main {
   max-height: 320px;
 }
+
+/*
+Mobile Menu Humburger: End
+*/

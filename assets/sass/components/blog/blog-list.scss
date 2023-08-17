@@ -1,4 +1,6 @@
-// Blog List: Start
+/*
+***Blog List: Start
+*/
 .blog-list {
     .container {
         >.row {
@@ -163,10 +165,8 @@
             }
         }
     }
-    // Blog List: End
 
 
-    // Blog Masonry: Start
     &.style-masonry {
         .container {
             >.row {
@@ -249,13 +249,13 @@
             }
         }
     }
-
-    // Blog Masonry: End
 }
 
 
 
-// Lastest News - Home 3: Change color - Start
+/*
+Lastest News - Home 3: Change color - Start
+*/
 .style-three {
     .blog-list {
         .container {
@@ -274,10 +274,14 @@
     }
 }
 
-//Lastest News - Home 3: Change color - End
+/*
+Lastest News - Home 3: Change color - End
+*/
 
 
-// Lastest Blogs - Home 6: Change color - Start
+/*
+Lastest Blogs - Home 6: Change color - Start
+*/
 .blog-list.style-six {
     .container {
         >.row {
@@ -296,4 +300,6 @@
     }
 }
 
-// Lastest Blogs - Home 6: Change color - End
+/*
+Lastest Blogs - Home 6: Change color - End
+*/

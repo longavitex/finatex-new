@@ -1,4 +1,6 @@
-// Responsive Footer: Start
+/*
+Responsive Footer: Start
+*/
 #footer {
     @media (max-width: 1023.99px) {
         .cta-block {
@@ -32,15 +34,29 @@
                     margin-top: 30px;
                     flex: 0 0 50%;
                     max-width: 50%;
-                    // margin-left: 25%;
+                    /*
+                    margin-left: 25%;
+*/
 
-                    // .company-contact {
-                    //     text-align: center;
+                    /*
+                    .company-contact {
+*/
+                    /*
+                    text-align: center;
+*/
 
-                    //     .mt-12, .locate {
-                    //         justify-content: center;
-                    //     }
-                    // }
+                    /*
+                    .mt-12, .locate {
+*/
+                    /*
+                    justify-content: center;
+*/
+                    /*
+                }
+*/
+                    /*
+                }
+*/
                 }
             }
         }
@@ -112,4 +128,6 @@
         }
     }
 }
-// Responsive Footer: End
+/*
+Responsive Footer: End
+*/

@@ -1,3 +1,6 @@
+/*
+Section Payment Gateway Services (first) Home1: Start
+*/
 .payment-gateway-one {
   position: relative;
 }
@@ -91,6 +94,12 @@
     transform: translateX(0px);
   }
 }
+/*
+Section Payment Gateway Services (first) Home1: End
+*/
+/*
+Section Payment Gateway Services (second) Home1: Start
+*/
 .payment-gateway-two .container .row.row-gap-32 > div:last-child .right {
   position: relative;
 }
@@ -196,3 +205,7 @@
     right: -10px;
   }
 }
+
+/*
+Section Payment Gateway Services (second) Home1: End
+*/

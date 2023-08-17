@@ -1,3 +1,6 @@
+/*
+***Blog List: Start
+*/
 .blog-list .container > .row > div .blog-item {
   transition: all ease 0.5s;
   cursor: pointer;
@@ -145,13 +148,26 @@
   }
 }
 
+/*
+Lastest News - Home 3: Change color - Start
+*/
 .style-three .blog-list .container > .row > div .blog-item-main:hover .heading6 {
   color: var(--gradient) !important;
 }
 
+/*
+Lastest News - Home 3: Change color - End
+*/
+/*
+Lastest Blogs - Home 6: Change color - Start
+*/
 .blog-list.style-six .container > .row .blog-item .blog-item-main {
   border: none;
 }
 .blog-list.style-six .container > .row .blog-item:hover .heading6 {
   color: var(--orange);
 }
+
+/*
+Lastest Blogs - Home 6: Change color - End
+*/

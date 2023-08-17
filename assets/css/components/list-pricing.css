@@ -1,3 +1,6 @@
+/*
+Shared List Pricing main: Start
+*/
 .pricing-block .pricing-main .heading .switch .bg-placehover {
   display: block;
   width: 80px;
@@ -34,3 +37,7 @@
 .pricing-block .pricing-main .heading .switch.enable .body3:last-child {
   color: var(--on-surface);
 }
+
+/*
+Shared List Pricing main: End
+*/

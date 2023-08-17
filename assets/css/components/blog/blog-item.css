@@ -1,3 +1,6 @@
+/*
+***Blog Item: Start
+*/
 .blog-item .blog-item-main {
   cursor: pointer;
   border-radius: 16px;
@@ -29,3 +32,7 @@
     display: block;
   }
 }
+
+/*
+*** Blog Item: End
+*/

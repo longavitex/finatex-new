@@ -1,3 +1,6 @@
+/*
+*** Case Studies Page - Style 1: Start
+*/
 .case-studies-block.style-one .list-nav {
   flex-wrap: wrap;
 }
@@ -66,6 +69,12 @@
   text-decoration: underline;
 }
 
+/*
+*** Case Studies Page - Style 1: End
+*/
+/*
+*** Case Studies Page - Style 2: Start
+*/
 .case-studies-block.style-two .list-nav {
   flex-wrap: wrap;
 }
@@ -138,6 +147,12 @@
     padding: 21px 10px;
   }
 }
+/*
+*** Case Studies Page - Style 2: End
+*/
+/*
+*** Section Case Studies - Home3: Start
+*/
 .case-studies-block.style-two.style-three {
   width: 100%;
   overflow: hidden;
@@ -172,3 +187,7 @@
 .case-studies-block.style-two.style-three .list-nav .nav-item:hover {
   background-color: var(--gradient);
 }
+
+/*
+*** Section Case Studies - Home3: End
+*/

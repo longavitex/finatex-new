@@ -1,4 +1,6 @@
-// Shared Animation Filter Item: Start
+/*
+Shared Animation Filter Item: Start
+*/
 @keyframes showItem {
     from {
         transform: scale(0.2);
@@ -24,4 +26,6 @@
     display: flex;
     animation: showItem ease-in-out 0.5s;
 }
-// Shared Animation Filter Item: End
+/*
+Shared Animation Filter Item: End
+*/

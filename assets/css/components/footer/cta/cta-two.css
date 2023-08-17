@@ -1,3 +1,6 @@
+/*
+CTA Home2: Start
+*/
 .cta-block.style-two {
   position: relative;
   height: 120px;
@@ -15,3 +18,7 @@
   object-fit: cover;
   width: 100%;
 }
+
+/*
+CTA Home2: End
+*/

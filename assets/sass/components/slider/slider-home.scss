@@ -1,5 +1,6 @@
-// Section Slider Homepage Main: Start
-// Slider Home1:Start
+/*
+Section Slider Homepage Main: Start
+*/
 .slider-block {
     position: relative;
 
@@ -205,10 +206,8 @@
         }
     }
 
-    // Slider Home1:End
 
 
-    // Slider Home2:Start
     &.style-two {
         .slider-main {
             .slider-item {
@@ -324,10 +323,8 @@
         }
     }
 
-    // Slider Home2:End
 
 
-    // Slider Home3:Start
     &.style-three {
         border-top: 1px solid #4b4b4b;
 
@@ -440,10 +437,7 @@
         }
     }
 
-    // Slider Home3:End
 
-
-    // Slider Home4:Start
     &.style-four {
         .text-content {
             .button-block {
@@ -537,10 +531,8 @@
         }
     }
 
-    // Slider Home4:End
 
 
-    // Slider Home6:Start
     &.style-six {
         .slider-main .slider-item {
             height: 1080px;
@@ -599,7 +591,6 @@
         }
     }
 
-    // Slider Home6:End
 
 
     @keyframes moveY {
@@ -630,4 +621,6 @@
         }
     }
 }
-// Section Slider Homepage Main: End
+/*
+Section Slider Homepage Main: End
+*/

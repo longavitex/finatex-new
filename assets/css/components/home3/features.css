@@ -1,3 +1,6 @@
+/*
+Section Features Home3: Start
+*/
 .features-three .container .row {
   position: relative;
   row-gap: 50px;
@@ -123,3 +126,7 @@
   display: flex !important;
   animation: showItem ease-in-out 0.5s;
 }
+
+/*
+Section Features Home3: End
+*/
