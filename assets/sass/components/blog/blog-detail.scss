@@ -13,8 +13,24 @@
                     font-style: italic;
                 }
 
-                li {
-                    text-transform: uppercase;
+                ul {
+                    padding-left: 20px;
+
+                    li {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .list-li {
+                padding-left: 12px;
+                padding-right: 12px;
+
+                .body3 {
+                    i {
+                        font-size: 18px;
+                        margin-top: 6px;
+                    }
                 }
             }
         }
@@ -126,6 +142,7 @@
         }
     }
 }
+
 /* Blog Detail - Style 1: End */
 
 
@@ -151,4 +168,5 @@
         }
     }
 }
+
 /*Blog Detail - Style 2: End*/

@@ -4822,8 +4822,19 @@ template {
 .blog-list.style-detail .blog-paragraph .paragraph-content .review .body2 {
   font-style: italic;
 }
-.blog-list.style-detail .blog-paragraph .paragraph-content .review li {
+.blog-list.style-detail .blog-paragraph .paragraph-content .review ul {
+  padding-left: 20px;
+}
+.blog-list.style-detail .blog-paragraph .paragraph-content .review ul li {
   text-transform: uppercase;
+}
+.blog-list.style-detail .blog-paragraph .paragraph-content .list-li {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.blog-list.style-detail .blog-paragraph .paragraph-content .list-li .body3 i {
+  font-size: 18px;
+  margin-top: 6px;
 }
 .blog-list.style-detail .blog-more-infor .infor-above .social-media i {
   background-color: var(--surface);
@@ -5912,6 +5923,7 @@ template {
 .js-video-modal .js-video-modal-container .video-block iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
 @media (max-width: 767.99px) {
   .js-video-modal .js-video-modal-container {
