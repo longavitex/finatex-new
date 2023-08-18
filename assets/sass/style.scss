@@ -3,13 +3,129 @@
 /*
 The sections Header(Header menu, Top nav), Footer, Slider, Services,
 News(Blogs), Testimonials will be CSS in the same area. The individual 
-sections will have separate CSS in each Home area. You can find them by 
-the syntax (Section + Home1,2,3,4,5,6). If you want to find the CSS position 
-of a certain section, look at its HTML file structure first, then search by 
-the section's parent class name (Press Crtl + F to search).
+sections will have separate CSS in each Home area. If you want to find 
+the CSS position of a certain section, look at its HTML file structure 
+first (look at their class, tag name, ...), then you can search by 
+title in the table of contents (Press Crtl + F to search).
 */
 /**/
 /**/
+
+/* 
+*
+*** Table of contents:
+-- Main color
+-- Reset CSS
+-- Container
+-- Main class used in Finatex
+
+-- Header(Top nav, menu)
+---- Header top nav main
+---- Responsive Top Nav
+---- Header menu main
+---- Header menu Home2
+---- Header menu Home3
+---- Header menu Home4
+---- Header menu Home5
+---- Header menu Home6
+---- Change active link of header menu subpages
+---- Responsive Header
+---- Mobile Menu Humburger
+
+-- Slider
+---- Section Slider Homepage Main
+---- Section Slider Subpage Main (About, Contact, FAQs, ...)
+
+-- Services
+---- Services Sections (Home1, home2, ...)
+---- Service Detail Page (service-detail.html) 
+
+-- Case Studies
+---- Case Studies Page - Style 1 (case-studies-one.html)
+---- Case Studies Page - Style 2 (case-studies-two.html)
+---- Section Case Studies
+---- Case Studies Detail (case-studies-detail.html)
+
+-- Section Testimonial
+---- Section Testimonial Home2
+---- Section Testimonial Home3
+---- Section Testimonial Home6
+
+-- Blogs
+---- Blog List
+---- Blog Masonry (.blog-list.style-masonry)
+---- Blog Sections (Change color when hover)
+------ Lastest News - Home 3
+------ Lastest Blogs - Home 6
+---- Blog Item (Shared)
+---- Blog Detail - Style 1 (blog-detail-one.html)
+---- Blog Detail - Style 2 (blog-detail-two.html)
+
+-- Home1 Sections
+---- Payment Gateway
+------ Section Payment Gateway Services (first) Home1
+------ Section Payment Gateway Services (second) Home1
+---- Section Benefit(Case Studies) Home1
+---- Section FAQs (Frequently Asked questions) Home1
+---- Section Form request (Request a free call back) Home1
+
+-- Home2 Sections
+---- Section About us Home2(Company Overview)
+---- Section counter (count number) Home2
+---- Section Our Project Home2
+---- Section Benefit (Form Request) Home2
+
+-- Home3 Sections
+---- Section Features Home3
+---- Section Benefit(Form Request) Home3
+
+-- Home4 Sections
+---- Section Counter Home4
+---- Section Our Pricing Home4
+---- Section Our Blogs Home4
+---- Section Form Resquest Home4
+
+-- Home5 Sections
+---- Section About Home5
+---- Section Card(One of the Most Trusted Wealth Management Companies) Home5
+---- Section Projects Home5
+---- Section Form Request Home5
+
+-- Home6 Sections
+---- Section Video About Home6
+---- Section About (People Trust Us) Home6
+---- Section Pricing Home6
+---- Section How we work Home6
+
+-- Contact Us Page
+---- Form contact
+---- Section Our Team (Shared with Home5)
+
+-- Shared List Questions (FAQs)
+-- Shared List Pricing main 
+-- List partners page
+
+-- Modal Video
+-- Shared Animation Filter Item
+-- Shared Layout some sections 
+(case-studies-detail: (Final outcome of this project), home3: (Registering and Using Online Banking Services))
+-- Shared section partners
+-- Scroll To Top Button
+
+-- Form contact main
+-- Form contact Home6
+
+-- CTA 
+---- CTA Home2
+---- CTA Home3
+---- Section CTA: Take control of your financial future - Home4
+---- Section CTA: Empower Your Finances with Cryptocurrency - Home5
+
+-- Footer
+-- Reduce font and spacing
+
+*
+*/
 
 /* Main color */
 :root {
@@ -77,26 +193,23 @@ Container: Start
 @import "layout/top-nav.scss";
 @import "components/header/menu/header-menu.scss";
 @import "layout/header-menu.scss";
+
 @import "components/slider/slider-home.scss";
 @import "components/slider/slider-subpage.scss";
+
 @import "components/service-block.scss";
 @import "layout/service-detail.scss";
+
 @import "components/case-studies/case-style.scss";
 @import "components/case-studies/case-detail.scss";
-
-@import "components/blog/blog-list.scss";
-@import "components/blog/blog-item.scss";
-@import "components/blog/blog-detail.scss";
 
 @import "components/testimonials/testimonials-two.scss";
 @import "components/testimonials/testimonials-three.scss";
 @import "components/testimonials/testimonials-six.scss";
 
-@import "components/form-contact.scss";
-@import "components/questionFAQ.scss";
-@import "components/list-pricing.scss";
-@import "components/our-team.scss";
-
+@import "components/blog/blog-list.scss";
+@import "components/blog/blog-item.scss";
+@import "components/blog/blog-detail.scss";
 
 @import "components/home1/payment-gateway.scss";
 @import "components/home1/benefit.scss";
@@ -126,11 +239,16 @@ Container: Start
 @import "components/home6/pricing.scss";
 @import "components/home6/how-we-work.scss";
 
+@import "components/form-contact.scss";
+@import "components/our-team.scss";
+
+@import "components/questionFAQ.scss";
+@import "components/list-pricing.scss";
+@import "layout/list-partner.scss";
 
 @import "layout/modal-video.scss";
 @import "layout/filter-item.scss";
 @import "layout/layout-item.scss";
-@import "layout/list-partner.scss";
 @import "layout/partner-5col.scss";
 @import "components/scroll-to-top.scss";
 
